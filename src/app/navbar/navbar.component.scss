@@ -1,3 +1,7 @@
+body {
+    font-family: 'Lexend', sans-serif;
+}
+
 .navbar {
     background-color: #175676;
     overflow: hidden;
@@ -24,8 +28,6 @@
     border-radius: 0 0 50px 0;
     float: left;
     margin-right: 10px;
-    left: 1;
-    rotate: 50%;
 }
 
 .text-fade {
