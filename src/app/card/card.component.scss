@@ -1,0 +1,23 @@
+.rounded-rectangle {
+    border: 2px solid #FFFFFF; /* Bordo del rettangolo */
+    border-radius: 20px; /* Raggio per arrotondare gli angoli */
+    width: 100%; /* Larghezza del rettangolo - 100% della larghezza del contenitore */
+    max-width: 300px; /* Larghezza massima del rettangolo */
+    height: 400px; /* Altezza del rettangolo */
+    margin: 0 auto; /* Centra il rettangolo orizzontalmente */
+    box-sizing: border-box; /* Considera il bordo nell'assegnazione di larghezza e altezza */
+    padding: 20px; /* Spaziatura interna al rettangolo */
+
+    box-shadow: 0 3px 10px 0 #001A38; /* x-offset: 0, y-offset: 4px, blur-radius: 5px, spread-radius: 0 */
+
+
+}
+
+/* Media query per adattare il rettangolo a diverse dimensioni dello schermo */
+@media (max-width: 600px) {
+    .rounded-rectangle {
+        height: 150px; /* Altezza del rettangolo per schermi più piccoli */
+        padding: 10px; /* Riduci la spaziatura interna per schermi più piccoli */
+    }
+}
+
