@@ -1,0 +1,13 @@
+.button-blue {
+    padding: 10px 50px;
+    background-color: #175676; /* blu */
+    color: #fff; /* testo bianco */
+    border-radius: 20px; /* bordi arrotondati */
+    font-family: 'lexend', sans-serif;
+    border: none;
+    transition: box-shadow 0.3s ease; /* transizione per l'ombra */
+  }
+  
+  .button-blue:hover {
+    box-shadow: 0 2.5px 5px #4BA3C3; /* ombra più accentuata al passaggio del mouse */
+  }

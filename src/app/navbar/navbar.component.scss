@@ -1,0 +1,39 @@
+.navbar {
+    background-color: #175676;
+    overflow: hidden;
+    border-radius: 0px;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a.right {
+    float: right;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: #BA324F;
+    border-radius: 0 0 50px 0;
+    float: left;
+    margin-right: 10px;
+    left: 1;
+    rotate: 50%;
+}
+
+.text-fade {
+    opacity: 0.7; /* Opacità di base */
+    transition: opacity 0.5s ease; /* Aggiunge un'animazione di transizione */
+}
+
+.text-fade:hover {
+    opacity: 1; /* Aumenta l'opacità durante l'hover */
+}
+

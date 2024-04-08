@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { CardComponent } from './card/card.component';
 import { MenuScrollComponent } from './menu-scroll/menu-scroll.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { ButtonBlueComponent } from './button-blue/button-blue.component';
+import { ButtonRedComponent } from './button-red/button-red.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +16,9 @@ import { MenuScrollComponent } from './menu-scroll/menu-scroll.component';
     HomePageComponent,
     CardComponent,
     MenuScrollComponent
+    NavbarComponent,
+    ButtonBlueComponent,
+    ButtonRedComponent
   ],
   imports: [
     BrowserModule,
