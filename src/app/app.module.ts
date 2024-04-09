@@ -8,6 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ButtonBlueComponent } from './button-blue/button-blue.component';
 import { ButtonRedComponent } from './button-red/button-red.component';
 import { ButtonEditComponent } from './button-edit/button-edit.component';
+import { EditPopupComponent } from './edit-popup/edit-popup.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ButtonEditComponent } from './button-edit/button-edit.component';
     NavbarComponent,
     ButtonBlueComponent,
     ButtonRedComponent,
-    ButtonEditComponent
+    ButtonEditComponent,
+    EditPopupComponent
   ],
   imports: [
     BrowserModule,
