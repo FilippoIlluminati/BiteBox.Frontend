@@ -17,7 +17,7 @@ import { EditPopupComponent } from './edit-popup/edit-popup.component';
     AppComponent,
     HomePageComponent,
     CardComponent,
-    MenuScrollComponent
+    MenuScrollComponent,
     NavbarComponent,
     ButtonBlueComponent,
     ButtonRedComponent,
