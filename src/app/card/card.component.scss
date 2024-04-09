@@ -1,0 +1,42 @@
+.rounded-rectangle {
+    border: 2px solid #FFFFFF; /* Bordo del rettangolo */
+    border-radius: 20px; 
+    width: 100%; 
+    max-width: 300px; 
+    height: 400px; 
+    margin: 0 auto; // Centra il rettangolo orizzontalmente 
+    box-sizing: border-box; // Considera il bordo nell'assegnazione di larghezza e altezza
+    background-color: #ffffff; //COLORE CARD
+    box-shadow: 0 3px 10px 0 #001A38; // EFFETTI: x-offset: 0, y-offset: 4px, blur-radius: 5px, spread-radius: 0 
+
+}
+
+/* Media query per adattare il rettangolo a diverse dimensioni dello schermo */
+@media (max-width: 600px) {
+    .rounded-rectangle {
+        height: 150px; /* Altezza del rettangolo per schermi più piccoli */
+        padding: 10px; /* Riduci la spaziatura interna per schermi più piccoli */
+    }
+}
+
+.rounded-rectangle img {
+    top: 0; /* Posiziona l'immagine all'inizio del rettangolo */
+    left: 0; /* Allinea l'immagine a sinistra */
+    width: 100%; /* Imposta la larghezza dell'immagine al 100% del rettangolo */
+    height: 45%; /* Imposta l'altezza dell'immagine alla metà del rettangolo */
+    object-fit: cover; /* Ridimensiona e ritaglia l'immagine per adattarla al contenitore */
+    border-radius: 20px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between; /* Distribuisce gli elementi in modo uniforme */
+  }
+  
+  .left-card,
+  .center-card,
+  .right-card {
+    flex-basis: 30%; /* Imposta la larghezza di ogni carta */
+    /* Aggiungi altri stili desiderati per le carte */
+  }
+  
