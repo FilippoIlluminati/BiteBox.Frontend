@@ -11,6 +11,7 @@ import { ButtonBlueComponent } from './button-blue/button-blue.component';
 import { ButtonRedComponent } from './button-red/button-red.component';
 import { ButtonEditComponent } from './button-edit/button-edit.component';
 import { EditPopupComponent } from './edit-popup/edit-popup.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { EditPopupComponent } from './edit-popup/edit-popup.component';
     ButtonBlueComponent,
     ButtonRedComponent,
     ButtonEditComponent,
-    EditPopupComponent
+    EditPopupComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
