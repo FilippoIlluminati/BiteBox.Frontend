@@ -14,8 +14,8 @@ import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AccediComponent } from './accedi/accedi.component';
 import { SegnalibroComponent } from './segnalibro/segnalibro.component';
-import { PayCheckComponent } from './Paypal/pay-check.component';
 import { AmzonPayComponent } from './amzon-pay/amzon-pay.component';
+import { PaypalComponent } from './paypal/paypal.component';
 
 
 
@@ -34,8 +34,9 @@ import { AmzonPayComponent } from './amzon-pay/amzon-pay.component';
     EditPopupComponent,
     AccediComponent,
     SegnalibroComponent,
-    PayCheckComponent,
-    AmzonPayComponent
+    AmzonPayComponent,
+    PaypalComponent,
+    
   ],
   imports: [
     CommonModule,

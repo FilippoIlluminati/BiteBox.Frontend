@@ -1,20 +1,21 @@
         .container {
             width: 400px;
-            margin: 50px auto;
-            background-color: #fff;
+            height: 470px;
+            margin: auto;
             padding: 20px;
+            border: 1px solid #ddd;
             border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         h1 {
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
         label {
             display: block;
-            margin-bottom: px;
+            margin-bottom: 3px;
             font-weight: bold;
         }
         
@@ -30,7 +31,7 @@
         button {
             background-color: #C5283D;
             width: 100%;
-            color: white;
+            color: rgb(255, 255, 255);
             padding: 10px 20px;
             border: none;
             border-radius: 3px;
