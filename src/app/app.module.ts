@@ -17,6 +17,7 @@ import { AccediComponent } from './accedi/accedi.component';
 import { SegnalibroComponent } from './segnalibro/segnalibro.component';
 import { AmzonPayComponent } from './amzon-pay/amzon-pay.component';
 import { PaypalComponent } from './paypal/paypal.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,7 @@ import { PaypalComponent } from './paypal/paypal.component';
     SegnalibroComponent,
     AmzonPayComponent,
     PaypalComponent,
-    
+    NavbarComponent
   ],
   imports: [
     CommonModule,
