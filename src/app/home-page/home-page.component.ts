@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class HomePageComponent {
 
+  slides = [
+    { image: './assets/slide3.jpeg', caption: 'First Slide' },
+    { image: './assets/slide2.jpeg', caption: 'Second Slide' }
+  ];
+
 }

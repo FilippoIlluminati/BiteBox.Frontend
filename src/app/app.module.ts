@@ -12,6 +12,8 @@ import { ButtonRedComponent } from './button-red/button-red.component';
 import { ButtonEditComponent } from './button-edit/button-edit.component';
 import { EditPopupComponent } from './edit-popup/edit-popup.component';
 import { FooterComponent } from './footer/footer.component';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+
 
 @NgModule({
   declarations: [
@@ -28,6 +30,7 @@ import { FooterComponent } from './footer/footer.component';
   ],
   imports: [
     BrowserModule,
+    CarouselModule.forRoot(),
     AppRoutingModule
   ],
   providers: [],

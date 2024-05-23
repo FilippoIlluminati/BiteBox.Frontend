@@ -24,6 +24,7 @@
     "devextreme": "23.1.5",
     "devextreme-angular": "23.1.5",
     "devextreme-schematics": "^1.6.0",
+    "ngx-bootstrap": "^12.0.0",
     "react-bootstrap": "^2.10.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",

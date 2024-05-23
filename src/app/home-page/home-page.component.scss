@@ -1,0 +1,113 @@
+.carousel-container {
+    width: 100%;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    justify-content: center;
+    gap: 100px;
+
+    .card {
+        .circle {
+            padding: 25px;
+            background-color: #CCE6F4;
+            border-radius: 50%;
+            width: fit-content;
+            margin: auto;
+        }
+    
+        .title,
+        .description {
+            text-align: center;
+        }
+    
+        .title {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+    }
+}
+
+.button-container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    .button-red {
+        padding: 10px 50px;
+        background-color: #BA324F; /* rosso */
+        color: #fff; /* testo bianco */
+        border-radius: 20px; /* bordi arrotondati */
+        font-family: 'lexend', sans-serif;
+        border: none;
+        transition: box-shadow 0.3s ease; /* transizione per l'ombra */
+    }
+      
+    .button-red:hover {
+        box-shadow: 0 2.5px 5px #FF5257; /* ombra al passaggio del mouse */
+    }
+}
+
+.divider {
+    width: 50%;
+    height: 2px;
+    background-color: #CCE6F4;
+    margin: 50px auto;
+}
+
+.bookmarks-container {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+
+    .bookmark {
+        width: 200px; /* Larghezza del segnalibro */
+        height: 550px; /* Altezza del segnalibro */
+        background: linear-gradient(to bottom, #4C3D2F, transparent); /* Gradiente per il colore vivido che diventa trasparente */
+        border-radius: 200px; /* Angoli arrotondati */
+      
+       .bookmark-img img {
+            width: 175px ;
+            height: 175px ;
+            margin: 0 auto;  
+            display: flex;
+            position: relative;
+            top: 15px; /* Usa il posizionamento relativo */
+        }
+      
+        .bookmark-corpo {
+          height: calc(100% - 60px); /* Altezza del corpo del segnalibro (meno l'altezza del cerchio) */
+          margin-top: 40px;
+          color: #fff;
+          padding: 0px 20px;
+          text-align: center;
+        }
+    }
+    
+    .bookmark:nth-child(1) {
+        background: linear-gradient(to bottom, #4C3D2F, transparent); /* Gradiente per il colore vivido che diventa trasparente */
+    }
+
+    .bookmark:nth-child(2) {
+        margin-top: 120px;
+        background: linear-gradient(to bottom, #AEC765, transparent); /* Gradiente per il colore vivido che diventa trasparente */
+    }
+
+    .bookmark:nth-child(3) {
+        background: linear-gradient(to bottom, #B3422B, transparent); /* Gradiente per il colore vivido che diventa trasparente */
+    }
+
+    .bookmark:nth-child(4) {
+        margin-top: 120px;
+        background: linear-gradient(to bottom, #C08859, transparent); /* Gradiente per il colore vivido che diventa trasparente */
+    }
+}

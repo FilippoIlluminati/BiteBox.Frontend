@@ -25,6 +25,7 @@ footer {
 }
 
 .additional-row {
+  margin: 0px 10px;
   text-align: center;
 }
 
@@ -40,7 +41,7 @@ footer {
 
 #p-prima-colonna {
   position: relative;
-  color: red;
+  color: color(srgb 1 0.3207 0.3425);
   text-decoration: none;
 }
 
@@ -48,16 +49,14 @@ h2 {
   color: white; /* Imposta il colore del testo su bianco */
 }
 
-p {
-  text-decoration: underline; /* Aggiunge la sottolineatura al paragrafo */
-}
-
 a {
   color: white; /* Imposta il colore del testo su bianco */
+  transition: all 0.3s;
 }
 
 a:hover {
   font-weight: bold;
+  font-size: 11pt;
 }
 
 .icon-container {
@@ -93,12 +92,20 @@ a:hover {
 .home-info {
   display: flex;
   align-items: center; /* Allinea verticalmente l'immagine e il contenuto */
+
+  img {
+    margin-right: 10px;
+  }
 }
 
 .payment-info {
   display: flex;
   justify-content: center; /* Centra il contenuto orizzontalmente */
   align-items: center;
+
+  .slang {
+    margin-right: 10px;
+  }
 }
 
 .home-info p,
@@ -111,6 +118,17 @@ a:hover {
   height: 24px;
   width: 24px;
   margin-right: 10px; /* Spazio tra le icone */
+}
+
+.payment-icons {
+  display: flex;
+  gap: 7px;
+
+  .payment-icon-container {
+    background-color: white;
+    padding: 4px 12px;
+    border-radius: 10px;
+  }
 }
 
 .payment-info img {
