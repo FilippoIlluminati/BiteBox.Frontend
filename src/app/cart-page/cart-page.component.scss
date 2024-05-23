@@ -1,0 +1,127 @@
+.container {
+    width: 600px; /* Regola la larghezza del contenitore */
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Arrotonda gli angoli del contenitore */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  
+  .img{
+    padding-left: auto;
+  }
+
+
+  .center{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.align-items-center {
+  display: flex; /* Enable Flexbox layout for horizontal alignment */
+  align-items: center; /* Align items vertically within the container */
+}
+
+/* Responsive column sizing (assuming Bootstrap) */
+.col-sm-6 {
+  flex: 0 0 75%; /* Set width to 50% on small screens (sm) */
+  max-width: 65%;  /* Set a maximum width as a fallback */
+}
+
+.col-sm-3 {
+  flex: 0 0 35%; /* Set width to 50% on small screens (sm) */
+  max-width: 65%;  /* Set a maximum width as a fallback */
+}
+
+
+
+.button-pay {
+  margin-left: 10px;
+  padding: 10px 20px;  /* Ridotto il padding per rendere il bottone più corto */
+  width: 50px; /* larghezza fissa */
+  height: 37px; /* altezza fissa */
+  background-color: #ffffff; 
+  border-radius: 10px; /* bordi arrotondati */
+  border: none;
+  border: 1px solid #ccc;
+  border-color: none;
+  display: flex; /* abilita il layout flessibile */
+  justify-content: center; /* centra l'immagine orizzontalmente */
+  align-items: center; /* centra l'immagine verticalmente */
+  overflow: hidden; /* per nascondere eventuali parti dell'immagine che fuoriescono dal bottone */
+  position: relative; /* Per consentire il posizionamento assoluto dell'immagine */
+  transition: box-shadow 0.3s ease; /* transizione per l'ombra */
+}
+
+.button-pay:hover {
+  box-shadow: 0 2.5px 5px #1d1d1d; /* ombra più accentuata al passaggio del mouse */
+}
+
+.payment-button.active {
+  border: 2px solid #007bff; /* Colore del bordo */
+}
+
+.pay{
+  width: 60px;
+  height: 50px;
+  background-color: none;
+  border-color: none;
+  //border: none;
+  background: none;
+}
+
+  
+  h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #BA324F;
+  }
+  h2 {
+    text-align: center;
+    font-size: 18px;
+    color: #175676;
+  }
+  h3 {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #BA324F;
+  }
+
+  .credit-card-container {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Arrotonda gli angoli del contenitore */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .credit-card-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Arrotonda gli angoli degli input */
+    box-sizing: border-box;
+  }
+  
+  .credit-card-input:focus {
+    outline: none;
+    border-color: #175676;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  
+
+
+  
