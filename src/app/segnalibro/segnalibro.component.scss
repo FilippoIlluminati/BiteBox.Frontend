@@ -1,0 +1,21 @@
+.segnalibro {
+    width: 200px; /* Larghezza del segnalibro */
+    height: 550px; /* Altezza del segnalibro */
+    background: linear-gradient(to bottom, #4C3D2F, transparent); /* Gradiente per il colore vivido che diventa trasparente */
+    border-radius: 200px; /* Angoli arrotondati */
+  
+   .immagine-segnalibro img {
+    width: 175px ;
+    height: 175px ;
+    margin: 0 auto;  
+    display: flex;
+    position: relative;
+    top: 15px; /* Usa il posizionamento relativo */
+    }
+  
+    .segnalibro-corpo {
+      height: calc(100% - 60px); /* Altezza del corpo del segnalibro (meno l'altezza del cerchio) */
+
+    }
+  }
+   
