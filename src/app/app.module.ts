@@ -9,7 +9,6 @@ import { ButtonBlueComponent } from './button-blue/button-blue.component';
 import { ButtonRedComponent } from './button-red/button-red.component';
 import { ButtonEditComponent } from './button-edit/button-edit.component';
 import { FooterComponent } from './footer/footer.component';
-import { BlueBaseComponent } from './blue-base/blue-base.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
