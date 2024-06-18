@@ -13,11 +13,11 @@ import { BlueBaseComponent } from './blue-base/blue-base.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AccediComponent } from './accedi/accedi.component';
-import { SegnalibroComponent } from './segnalibro/segnalibro.component';
 import { AmzonPayComponent } from './amzon-pay/amzon-pay.component';
 import { PaypalComponent } from './paypal/paypal.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { LoginComponent } from './login/login.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -29,11 +29,11 @@ import { NavbarComponent } from './navbar/navbar.component';
     ButtonEditComponent,
     FooterComponent,
     FooterComponent,
-    AccediComponent,
-    SegnalibroComponent,
+    LoginComponent,
     AmzonPayComponent,
     PaypalComponent,
-    NavbarComponent
+    NavbarComponent,
+    ProfileComponent
   ],
   imports: [
     CommonModule,

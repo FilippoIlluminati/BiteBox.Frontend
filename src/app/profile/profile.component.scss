@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    font-family: 'Lexend', sans-serif; /* Cambiato il font in Lexend */
+    background-color: #fff;
+}
+
+.container {
+    display: flex;
+    width: 100%; /* Impostato il container alla larghezza totale della finestra */
+}
+
+.sidebar {
+    flex: 0 0 250px; /* Larghezza fissa di 250px */
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-icon img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.profile-name {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.menu {
+    margin-top: 20px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Allineamento al centro */
+}
+
+.menu li:nth-child(2),
+.menu li:nth-child(3),
+.menu li:nth-child(4) {
+    margin-top: 20px; /* Aggiunto margine top */
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.menu .active a {
+    color: #d9534f;
+    font-weight: bold;
+}
+
+.indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #d9534f;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.main-content-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-header {
+    text-align: center;
+    padding: 30px 20px 10px 20px; /* Ridotto il padding inferiore e aumentato il padding superiore */
+}
+
+.main-header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #d9534f;
+}
+
+.main-content {
+    flex: 1;
+    padding: 10px 20px 20px 20px; /* Ridotto il padding superiore */
+}
+
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #0B3954; /* Cambiato il colore della riga sotto l'header */
+    padding-bottom: 10px;
+    margin-top: 10px; /* Ridotto il margine superiore */
+}
+
+.tabs ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.tabs li {
+    margin-right: 20px;
+}
+
+.tabs a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+
+.tabs .active a {
+    color: #d9534f;
+    font-weight: bold;
+}
+
+.profile-info {
+    margin-top: 20px;
+}
+
+.info-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.info-item label {
+    font-weight: bold;
+    margin-right: 10px;
+    width: 150px; /* Aggiunto larghezza fissa per l'allineamento */
+    text-align: left;
+}
+
+.info-item span {
+    flex: 1;
+}
+
+.edit-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.edit-button:hover {
+    background-color: #0056b3;
+}
+
+.menu li a .indicator {
+    margin-right: 10px;
+}
+
+.menu li a span {
+    text-align: left; /* Per allineare il testo a sinistra */
+}
