@@ -1,10 +1,6 @@
-<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-<<<<<<< Updated upstream
-<path d="M34.375 19.5835L15.625 8.771" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-=======
-<path d="M34.375 19.5834L15.625 8.77087" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
->>>>>>> Stashed changes
-<path d="M43.75 33.3333V16.6666C43.7492 15.9359 43.5564 15.2183 43.1907 14.5857C42.825 13.9531 42.2995 13.4278 41.6667 13.0625L27.0833 4.72913C26.4499 4.36342 25.7314 4.1709 25 4.1709C24.2686 4.1709 23.5501 4.36342 22.9167 4.72913L8.33333 13.0625C7.70055 13.4278 7.17496 13.9531 6.80929 14.5857C6.44363 15.2183 6.25075 15.9359 6.25 16.6666V33.3333C6.25075 34.064 6.44363 34.7816 6.80929 35.4142C7.17496 36.0468 7.70055 36.5721 8.33333 36.9375L22.9167 45.2708C23.5501 45.6365 24.2686 45.829 25 45.829C25.7314 45.829 26.4499 45.6365 27.0833 45.2708L41.6667 36.9375C42.2995 36.5721 42.825 36.0468 43.1907 35.4142C43.5564 34.7816 43.7492 34.064 43.75 33.3333Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M6.8125 14.5L25 25.0208L43.1875 14.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M25 46V25" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="50" cy="50" r="50" fill="#CCE6F4"/>
+<path d="M37.5 29.1667L31.25 37.5V66.6667C31.25 67.7717 31.689 68.8315 32.4704 69.6129C33.2518 70.3943 34.3116 70.8333 35.4167 70.8333H64.5833C65.6884 70.8333 66.7482 70.3943 67.5296 69.6129C68.311 68.8315 68.75 67.7717 68.75 66.6667V37.5L62.5 29.1667H37.5Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M31.25 37.5H68.75" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M58.3334 45.8333C58.3334 48.0435 57.4554 50.1631 55.8926 51.7259C54.3298 53.2887 52.2102 54.1667 50.0001 54.1667C47.7899 54.1667 45.6703 53.2887 44.1075 51.7259C42.5447 50.1631 41.6667 48.0435 41.6667 45.8333" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

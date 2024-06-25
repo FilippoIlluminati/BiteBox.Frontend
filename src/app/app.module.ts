@@ -17,6 +17,8 @@ import { PaypalComponent } from './paypal/paypal.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
+import { RatingTableComponent } from './rating-table/rating-table.component';
+import { HowItWorksComponent } from './how-it-works/how-it-works.component';
 
 @NgModule({
   declarations: [
@@ -31,8 +33,10 @@ import { ProfileComponent } from './profile/profile.component';
     LoginComponent,
     AmzonPayComponent,
     PaypalComponent,
-    NavbarComponent,
     ProfileComponent
+    RatingTableComponent,
+    HowItWorksComponent
+    NavbarComponent,
   ],
   imports: [
     CommonModule,
