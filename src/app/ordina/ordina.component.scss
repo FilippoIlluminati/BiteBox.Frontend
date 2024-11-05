@@ -1,0 +1,72 @@
+// Impostazioni di base
+$font-family: 'Arial', sans-serif;
+$primary-color: #8B5E3C;        // Marrone caldo
+$secondary-color: #FDF7F3;      // Beige tenue
+$accent-color: #D9BBA9;         // Colore di accento per i titoli
+$text-color: #4A4A4A;           // Grigio scuro
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-family;
+    background-color: $secondary-color;
+    color: $text-color;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.title-box {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;  // Larghezza completa dello schermo
+    background-color: $accent-color;
+    color: $text-color;
+    font-size: 2rem;
+    text-align: center;
+    padding: 15px 0;
+    margin: 50px 0;  // Spazio sopra e sotto per separare le sezioni
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0.9;
+}
+
+.menu {
+    margin: 0;
+
+    h2 {
+        font-size: 26px;
+        color: $primary-color;
+        text-align: center;
+        padding: 5px ;
+        border-bottom: 2px solid $primary-color;
+        margin: 0;
+        margin-bottom: 20px;
+        margin-top: 150px;
+    }
+
+    .menu-item {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);  // 4 colonne fisse
+        gap: 70px 30px;                         // 20px orizzontale e 30px verticale
+        padding: 30px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        margin-bottom: 60px;
+        width: 85%;                             // Larghezza per adattarsi al container
+        margin: 0 auto;                         // Centra il contenitore `.menu-item`
+    }
+    
+}
+
+
+
+

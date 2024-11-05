@@ -1,66 +1,80 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Area Riservata</title>
-    <link rel="stylesheet">
-</head>
-<body>
-    <div class="container">
-        <aside class="sidebar">
-            <div class="profile">
-                <div class="profile-icon">
-                    <img src="profile-icon.png" alt="Profile Icon">
-                </div>
-                <div class="profile-name">Marco Calabria</div>
-            </div>
-            <nav class="menu">
-                <ul>
-                    <li class="active">
-                        <a href="#"><span class="indicator"></span> Profilo</a>
-                    </li>
-                    <li><a href="#">Ordini</a></li>
-                    <li><a href="#">Assistenza</a></li>
-                </ul>
-            </nav>
-        </aside>
-        <div class="main-content-container">
-            <header class="main-header">
-                <h1>Area Riservata</h1>
-            </header>
-            <main class="main-content">
-                <header class="content-header">
-                    <nav class="tabs">
-                        <ul>
-                            <li class="active"><a href="#">Anagrafica</a></li>
-                            <li><a href="#">Metodi di pagamento</a></li>
-                            <li><a href="#">Impostazioni</a></li>
-                            <li><a href="#">Info</a></li>
-                        </ul>
-                    </nav>
-                </header>
-                <section class="profile-info">
-                    <div class="info-item">
-                        <label>Nome:</label>
-                        <span>Marco</span>
-                    </div>
-                    <div class="info-item">
-                        <label>Cognome:</label>
-                        <span>Calabria</span>
-                    </div>
-                    <div class="info-item">
-                        <label>Email:</label>
-                        <span>marco.calabriagmail.com</span>
-                    </div>
-                    <div class="info-item">
-                        <label>Numero di telefono:</label>
-                        <span>+39 347 9069 837</span>
-                    </div>
-                    <button class="edit-button">Modifica</button>
-                </section>
-            </main>
-        </div>
-    </div>
-</body>
-</html>
+<div class="profile-container">
+    <aside class="sidebar">
+      <ul>
+        <li class="user-info">
+          <img src="user-photo.jpg" alt="Jitu Chauhan" />
+          <h3>Jitu Chauhan</h3>
+          <p>Personal account</p>
+        </li>
+        <li><a href="#">Account</a></li>
+        <li><a href="#">Dati</a></li>
+        <li><a href="#">Ordini</a></li>
+        <li><a href="#">Pagamenti</a></li>
+        <li><a href="#">Esci</a></li>
+      </ul>
+    </aside>
+  
+    <section class="profile-content">
+      <h2>Profile</h2>
+  
+      <div class="profile-picture">
+        <h3>Profile Picture</h3>
+        <img src="assets/profilo.jpg"  alt="Profile photo" />
+      </div>
+  
+      <div class="account-info">
+        <h3>Account Information</h3>
+        <form>
+          <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" placeholder="Jitu" />
+          </div>
+  
+          <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" placeholder="Chauhan" />
+          </div>
+  
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" placeholder="+1 4XX XXX XXXX" />
+          </div>
+  
+          <div class="form-group">
+            <label for="birthday">Birthday</label>
+            <input type="text" id="birthday" placeholder="dd/mm/yyyy" />
+          </div>
+  
+          <div class="form-group">
+            <label for="address">Address Line</label>
+            <input type="text" id="address" />
+          </div>
+  
+          <div class="form-group">
+            <label for="country">Country</label>
+            <select id="country">
+              <option>India</option>
+            </select>
+          </div>
+  
+          <div class="form-group">
+            <label for="state">State / Region</label>
+            <select id="state">
+              <option>Gujarat</option>
+            </select>
+          </div>
+  
+          <div class="form-group">
+            <label for="city">City</label>
+            <select id="city">
+              <option>Ahmedabad</option>
+            </select>
+          </div>
+  
+          <button type="submit" class="save-button">Save Changes</button>
+          <button type="button" class="cancel-button">Cancel</button>
+        </form>
+      </div>
+    </section>
+  </div>
+  

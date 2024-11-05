@@ -8,6 +8,7 @@ import { CardComponent } from './card/card.component';
 import { ButtonBlueComponent } from './button-blue/button-blue.component';
 import { ButtonRedComponent } from './button-red/button-red.component';
 import { ButtonEditComponent } from './button-edit/button-edit.component';
+//import { EditPopupComponent } from './edit-popup/edit-popup.component';
 import { FooterComponent } from './footer/footer.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { CommonModule } from '@angular/common';
@@ -17,8 +18,11 @@ import { PaypalComponent } from './paypal/paypal.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
-import { RatingTableComponent } from './rating-table/rating-table.component';
-import { HowItWorksComponent } from './how-it-works/how-it-works.component';
+import { ProfileOrdiniComponent } from './profile-ordini/profile-ordini.component';
+import { SingUpComponent } from './sing-up/sing-up.component';
+import { RitiroComponent } from './ritiro/ritiro.component';
+import { OrdinaComponent } from './ordina/ordina.component';
+
 
 @NgModule({
   declarations: [
@@ -33,11 +37,14 @@ import { HowItWorksComponent } from './how-it-works/how-it-works.component';
     LoginComponent,
     AmzonPayComponent,
     PaypalComponent,
-    ProfileComponent
-    RatingTableComponent,
-    HowItWorksComponent
+    ProfileComponent,
     NavbarComponent,
+    SingUpComponent,
+    RitiroComponent,
+    ProfileOrdiniComponent,
+    OrdinaComponent
   ],
+
   imports: [
     CommonModule,
     BrowserModule,
