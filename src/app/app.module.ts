@@ -22,6 +22,8 @@ import { ProfileOrdiniComponent } from './profile-ordini/profile-ordini.componen
 import { SingUpComponent } from './sing-up/sing-up.component';
 import { RitiroComponent } from './ritiro/ritiro.component';
 import { OrdinaComponent } from './ordina/ordina.component';
+import { AreaRiservataComponent } from './area-riservata/area-riservata.component';
+
 
 
 @NgModule({
@@ -42,7 +44,8 @@ import { OrdinaComponent } from './ordina/ordina.component';
     SingUpComponent,
     RitiroComponent,
     ProfileOrdiniComponent,
-    OrdinaComponent
+    OrdinaComponent,
+    AreaRiservataComponent
   ],
 
   imports: [

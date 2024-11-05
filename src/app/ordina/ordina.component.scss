@@ -1,8 +1,8 @@
 // Impostazioni di base
 $font-family: 'Arial', sans-serif;
-$primary-color: #8B5E3C;        // Marrone caldo
+$primary-color: #ffff ;        // Marrone caldo
 $secondary-color: #FDF7F3;      // Beige tenue
-$accent-color: #D9BBA9;         // Colore di accento per i titoli
+$accent-color: #f16d61;         // Colore di accento per i titoli
 $text-color: #4A4A4A;           // Grigio scuro
 
 * {
@@ -24,31 +24,34 @@ body {
 }
 
 .title-box {
+    //color: $primary-color;
+    color: #f16d61;
+    font-size: 70px;
+    font-weight: bold;
+    font-style: italic;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    width: 100vw;  // Larghezza completa dello schermo
-    background-color: $accent-color;
-    color: $text-color;
-    font-size: 2rem;
+    //width: 100vw;  // Larghezza completa dello schermo
+    //background-color: $accent-color;
     text-align: center;
     padding: 15px 0;
     margin: 50px 0;  // Spazio sopra e sotto per separare le sezioni
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    opacity: 0.9;
+   // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    //opacity: 0.7;
+    border-radius: 8px;
 }
 
 .menu {
     margin: 0;
 
-    h2 {
+    h1 {
         font-size: 26px;
         color: $primary-color;
         text-align: center;
         padding: 5px ;
         border-bottom: 2px solid $primary-color;
         margin: 0;
-        margin-bottom: 20px;
         margin-top: 150px;
     }
 
