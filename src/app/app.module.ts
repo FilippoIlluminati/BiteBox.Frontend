@@ -15,7 +15,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AmzonPayComponent } from './amzon-pay/amzon-pay.component';
 import { PaypalComponent } from './paypal/paypal.component';
 import { NavbarComponent } from './navbar/navbar.component';
-<<<<<<< Updated upstream
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ProfileOrdiniComponent } from './profile-ordini/profile-ordini.component';
@@ -23,12 +22,7 @@ import { SingUpComponent } from './sing-up/sing-up.component';
 import { RitiroComponent } from './ritiro/ritiro.component';
 import { OrdinaComponent } from './ordina/ordina.component';
 import { AreaRiservataComponent } from './area-riservata/area-riservata.component';
-
-
-=======
-import { CartPageComponent } from './cart-page/cart-page.component';
 import { CheckoutComponent } from './checkout/checkout.component';
->>>>>>> Stashed changes
 
 @NgModule({
   declarations: [
@@ -43,23 +37,15 @@ import { CheckoutComponent } from './checkout/checkout.component';
     AmzonPayComponent,
     PaypalComponent,
     ProfileComponent,
-    RatingTableComponent,
-    HowItWorksComponent,
     NavbarComponent,
     SingUpComponent,
     RitiroComponent,
     ProfileOrdiniComponent,
     OrdinaComponent,
-    AreaRiservataComponent
-=======
-    AccediComponent,
-    SegnalibroComponent,
+    AreaRiservataComponent,
     AmzonPayComponent,
     PaypalComponent,
-    NavbarComponent,
-    CartPageComponent,
-    CheckoutComponent,
->>>>>>> Stashed changes
+    CheckoutComponent
   ],
 
   imports: [

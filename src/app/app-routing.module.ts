@@ -4,6 +4,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
 import { HowItWorksComponent } from './how-it-works/how-it-works.component';
+import { OrdinaComponent } from './ordina/ordina.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,11 @@ const routes: Routes = [
   {
     path: 'howitworks',
     component: HowItWorksComponent
+  },
+  {
+    path: 'ordina',
+    canActivate: [false], // TODO: add authentication checks
+    component: OrdinaComponent
   },
   {
     path: '**',
