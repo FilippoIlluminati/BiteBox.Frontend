@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
@@ -40,12 +39,12 @@ import { CheckoutComponent } from './checkout/checkout.component';
     ButtonRedComponent,
     ButtonEditComponent,
     FooterComponent,
-<<<<<<< Updated upstream
-    FooterComponent,
     LoginComponent,
     AmzonPayComponent,
     PaypalComponent,
     ProfileComponent,
+    RatingTableComponent,
+    HowItWorksComponent,
     NavbarComponent,
     SingUpComponent,
     RitiroComponent,
@@ -68,10 +67,9 @@ import { CheckoutComponent } from './checkout/checkout.component';
     BrowserModule,
     CarouselModule.forRoot(),
     AppRoutingModule,
-    AppRoutingModule,
     BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { }
