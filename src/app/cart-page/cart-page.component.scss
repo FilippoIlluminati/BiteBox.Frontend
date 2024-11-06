@@ -1,127 +1,140 @@
-.container {
-    width: 600px; /* Regola la larghezza del contenitore */
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px; /* Arrotonda gli angoli del contenitore */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-
-  
-  .img{
-    padding-left: auto;
-  }
-
-
-  .center{
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
+.cart-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 60%;
+  margin: 30px auto;
+  text-align: center;
 }
 
-.align-items-center {
-  display: flex; /* Enable Flexbox layout for horizontal alignment */
-  align-items: center; /* Align items vertically within the container */
+h2 {
+  color: #174C61;
+  margin-bottom: 15px;
 }
 
-/* Responsive column sizing (assuming Bootstrap) */
-.col-sm-6 {
-  flex: 0 0 75%; /* Set width to 50% on small screens (sm) */
-  max-width: 65%;  /* Set a maximum width as a fallback */
+.cart-summary {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
 }
 
-.col-sm-3 {
-  flex: 0 0 35%; /* Set width to 50% on small screens (sm) */
-  max-width: 65%;  /* Set a maximum width as a fallback */
+.cart-summary th, .cart-summary td {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  font-size: 1.5rem;
+  vertical-align: middle; /* Aggiunto per allineare verticalmente */
 }
 
+.cart-summary th {
+  background-color: #f8f8f8;
+  color: #333;
+}
 
+.cart-summary .rounded-left {
+  border-top-left-radius: 10px;
+}
 
-.button-pay {
-  margin-left: 10px;
-  padding: 10px 20px;  /* Ridotto il padding per rendere il bottone più corto */
-  width: 50px; /* larghezza fissa */
-  height: 37px; /* altezza fissa */
-  background-color: #ffffff; 
-  border-radius: 10px; /* bordi arrotondati */
+.cart-summary .rounded-right {
+  border-top-right-radius: 10px;
+}
+
+.cart-summary .text-center {
+  text-align: center;
+}
+
+.cart-summary .text-right {
+  text-align: right;
+  padding-right: 20px;
+}
+
+.cart-summary .text-left {
+  text-align: center; /* Modificato per centrare il testo nella colonna di sinistra */
+}
+
+.cart-summary .border-right {
+  border-right: 1px solid #ddd;
+}
+
+.cart-summary tfoot td {
+  font-weight: bold;
+  padding-top: 10px;
+  vertical-align: middle; /* Aggiunto per centrare verticalmente "Totale" */
+}
+
+.cart-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-blue {
+  padding: 10px 50px;
+  background-color: #175676;
+  color: #fff;
+  border-radius: 20px;
+  font-family: 'lexend', sans-serif;
   border: none;
-  border: 1px solid #ccc;
-  border-color: none;
-  display: flex; /* abilita il layout flessibile */
-  justify-content: center; /* centra l'immagine orizzontalmente */
-  align-items: center; /* centra l'immagine verticalmente */
-  overflow: hidden; /* per nascondere eventuali parti dell'immagine che fuoriescono dal bottone */
-  position: relative; /* Per consentire il posizionamento assoluto dell'immagine */
-  transition: box-shadow 0.3s ease; /* transizione per l'ombra */
+  transition: box-shadow 0.3s ease;
 }
 
-.button-pay:hover {
-  box-shadow: 0 2.5px 5px #1d1d1d; /* ombra più accentuata al passaggio del mouse */
+.button-blue:hover {
+  box-shadow: 0 2.5px 5px #4BA3C3;
 }
 
-.payment-button.active {
-  border: 2px solid #007bff; /* Colore del bordo */
+.button-red {
+  padding: 10px 50px;
+  background-color: #BA324F;
+  color: #fff;
+  border-radius: 20px;
+  font-family: 'lexend', sans-serif;
+  border: none;
+  transition: box-shadow 0.3s ease;
 }
 
-.pay{
-  width: 60px;
-  height: 50px;
-  background-color: none;
-  border-color: none;
-  //border: none;
-  background: none;
+.button-red:hover {
+  box-shadow: 0 2.5px 5px #FF5257;
 }
 
-  
-  h1 {
-    text-align: center;
-    font-size: 28px;
-    color: #BA324F;
+/* Media Queries per la Responsività */
+@media (max-width: 1200px) {
+  .cart-container {
+    width: 80%; /* Rende il contenitore più largo su schermi più piccoli */
   }
+
+  .cart-summary th, .cart-summary td {
+    font-size: 1.3rem; /* Riduce la dimensione del testo nelle celle */
+  }
+}
+
+@media (max-width: 768px) {
+  .cart-container {
+    width: 90%; /* Rende il contenitore quasi a piena larghezza */
+    padding: 15px; /* Riduce il padding */
+  }
+
+  .cart-summary th, .cart-summary td {
+    font-size: 1.2rem; /* Ulteriore riduzione della dimensione del testo */
+  }
+
+  .button-blue, .button-red {
+    padding: 8px 20px; /* Riduce il padding per i bottoni */
+  }
+}
+
+@media (max-width: 480px) {
+  .cart-container {
+    padding: 10px; /* Riduce ulteriormente il padding */
+  }
+
   h2 {
-    text-align: center;
-    font-size: 18px;
-    color: #175676;
-  }
-  h3 {
-    text-align: center;
-    font-size: 14px;
-    margin-bottom: 20px;
-    color: #BA324F;
+    font-size: 1.5rem; /* Riduce la dimensione del titolo */
   }
 
-  .credit-card-container {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px; /* Arrotonda gli angoli del contenitore */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  .cart-summary th, .cart-summary td {
+    font-size: 1rem; /* Ulteriore riduzione della dimensione del testo */
   }
-  
-  .credit-card-input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px; /* Arrotonda gli angoli degli input */
-    box-sizing: border-box;
-  }
-  
-  .credit-card-input:focus {
-    outline: none;
-    border-color: #175676;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  
-  
 
-
-  
+  .button-blue, .button-red {
+    padding: 6px 15px; /* Ulteriore riduzione del padding per i bottoni */
+  }
+}

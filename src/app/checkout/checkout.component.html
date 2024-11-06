@@ -1,0 +1,60 @@
+<br>
+
+<div class="container">
+    <h1>Pagamento:</h1>
+    <h3>ci siamo quasi...</h3>
+    
+    <img src="assets/state1.svg">
+    
+    <div class="center">
+        <h2>Seleziona il metodo che preferisci</h2><br>
+        </div>
+
+    <div class="center">
+
+        <button (click)="selectPaymentMethod(0)" class="button-pay"><img src="assets/visa.svg"></button>
+
+        <button (click)="selectPaymentMethod(1)" class="button-pay"><img src="assets/mastercard.svg"></button>
+
+        <button (click)="selectPaymentMethod(2)" class="button-pay"><img src="assets/goopay.svg"></button>
+  
+        <button (click)="selectPaymentMethod(3)" class="button-pay"><img src="assets/apppay.svg"></button>
+
+        <button (click)="selectPaymentMethod(4)" class="button-pay"><img src="assets/paypal.svg"></button>
+
+        <button (click)="selectPaymentMethod(5)" class="button-pay"><img src="assets/amzpay.svg"></button>
+     
+      </div>
+
+      <div class="center"> <button class="button-blue">Procedi</button> </div>
+
+      <form>
+        <div class="credit-card-container" *ngIf="selectedPaymentMethod == 0 || selectedPaymentMethod == 1">
+
+          <label for="cardholderName">Nome del titolare:</label>
+          <input type="text" id="name" pattern="[A-Za-zàèéìíòóùüÁÈÉÌÍÒÓÙÜñÑ\s]+" class="credit-card-input" placeholder="Nome e Cognome" required>
+        
+          <label for="cardNumber">Numero di carta:</label>
+          <input type="text" id="cardNumber" class="credit-card-input" name="cardNumber" (input)="formatCardNumber($event)" maxlength="19" pattern="\d{4}-\d{4}-\d{4}-\d{4}" title="1234-1234-1234-1234" placeholder="1234 1234 1234 1234" required>
+
+          <div class="row align-items-center">
+            <div class="col-sm-6">
+              <label for="expiryDate">Data di scadenza:</label>
+              <input type="month" id="expiryDate" class="credit-card-input" pattern="[0-9]{2}/[0-9]{2}" required>
+            </div>
+            <div class="col-sm-3 d-flex justify-content-end">
+              <label for="cvc">CVC:</label>
+              <input type="text" id="cvc" pattern="[0-9]*" class="credit-card-input" maxlength="3"  placeholder="cvc"  required>
+            </div>
+          </div>
+
+          <div class="center"> <button class="button-blue">Paga</button> </div>
+
+        </div>
+      </form>
+
+      <app-amzon-pay *ngIf="selectedPaymentMethod == 5"></app-amzon-pay>
+
+      <app-paypal *ngIf="selectedPaymentMethod == 4"></app-paypal>
+
+  </div>

@@ -16,6 +16,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AmzonPayComponent } from './amzon-pay/amzon-pay.component';
 import { PaypalComponent } from './paypal/paypal.component';
 import { NavbarComponent } from './navbar/navbar.component';
+<<<<<<< Updated upstream
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ProfileOrdiniComponent } from './profile-ordini/profile-ordini.component';
@@ -25,6 +26,10 @@ import { OrdinaComponent } from './ordina/ordina.component';
 import { AreaRiservataComponent } from './area-riservata/area-riservata.component';
 
 
+=======
+import { CartPageComponent } from './cart-page/cart-page.component';
+import { CheckoutComponent } from './checkout/checkout.component';
+>>>>>>> Stashed changes
 
 @NgModule({
   declarations: [
@@ -35,6 +40,7 @@ import { AreaRiservataComponent } from './area-riservata/area-riservata.componen
     ButtonRedComponent,
     ButtonEditComponent,
     FooterComponent,
+<<<<<<< Updated upstream
     FooterComponent,
     LoginComponent,
     AmzonPayComponent,
@@ -46,6 +52,15 @@ import { AreaRiservataComponent } from './area-riservata/area-riservata.componen
     ProfileOrdiniComponent,
     OrdinaComponent,
     AreaRiservataComponent
+=======
+    AccediComponent,
+    SegnalibroComponent,
+    AmzonPayComponent,
+    PaypalComponent,
+    NavbarComponent,
+    CartPageComponent,
+    CheckoutComponent,
+>>>>>>> Stashed changes
   ],
 
   imports: [

@@ -1,35 +1,46 @@
+html, body {
+  height: 100%; /* Imposta l'altezza del documento */
+  margin: 0; /* Rimuove margini predefiniti */
+}
+
+body {
+  display: flex;
+  flex-direction: column; /* Dispone gli elementi in colonna */
+}
+
 footer {
   background-color: #175676;
   color: white;
   padding: 20px;
+  margin-top: auto; /* Spinge il footer verso il basso */
 }
 
 .footer-columns {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap; /* Permette il wrap delle colonne */
 }
-
 
 .footer-column {
   display: flex;
-  justify-content: center; /* Centra il contenuto orizzontalmente */
-  align-items: center; /* Centra il contenuto verticalmente */
-  flex-direction: column; /* Imposta l'orientamento del contenuto in colonna */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 20%;
 }
 
 .divider {
-  border-bottom: 2px solid #CCE6F4; /* Aumenta lo spessore del bordo inferiore */
+  border-bottom: 2px solid #CCE6F4;
   margin: 20px 0;
-  width: 100%; /* Imposta la larghezza al 100% */
+  width: 100%;
 }
 
 .additional-row {
-  margin: 0px 10px;
+  margin: 0 10px;
   text-align: center;
 }
 
-#h1-prima-colonna{
+#h1-prima-colonna {
   font-size: 50px;
   margin-top: 0;
 }
@@ -46,11 +57,11 @@ footer {
 }
 
 h2 {
-  color: white; /* Imposta il colore del testo su bianco */
+  color: white;
 }
 
 a {
-  color: white; /* Imposta il colore del testo su bianco */
+  color: white;
   transition: all 0.3s;
 }
 
@@ -61,11 +72,11 @@ a:hover {
 
 .icon-container {
   display: flex;
-  align-items: center; /* Allinea verticalmente l'icona e il contenuto */
+  align-items: center;
 }
 
 .icon-container img {
-  margin-right: 10px; /* Aggiunge spazio tra l'icona e il testo */
+  margin-right: 10px;
 }
 
 .icon-grid {
@@ -73,7 +84,7 @@ a:hover {
   grid-template-columns: repeat(2, auto);
   gap: 10px;
   align-items: center;
-  margin-bottom: 25px; /* Aggiunge spazio sotto al div */
+  margin-bottom: 25px;
 }
 
 .icon-grid img {
@@ -87,55 +98,91 @@ a:hover {
   align-items: center;
 }
 
-
-
 .home-info {
   display: flex;
-  align-items: center; /* Allinea verticalmente l'immagine e il contenuto */
+  align-items: center;
+}
 
-  img {
-    margin-right: 10px;
-  }
+.home-info img {
+  margin-right: 10px;
 }
 
 .payment-info {
   display: flex;
-  justify-content: center; /* Centra il contenuto orizzontalmente */
+  justify-content: center;
   align-items: center;
+}
 
-  .slang {
-    margin-right: 10px;
-  }
+.payment-info .slang {
+  margin-right: 10px;
 }
 
 .home-info p,
 .payment-info p {
-  margin: 0; /* Rimuove il margine predefinito */
-  padding: 0; /* Rimuove il padding predefinito */
-}
-
-.payment-icons img {
-  height: 24px;
-  width: 24px;
-  margin-right: 10px; /* Spazio tra le icone */
+  margin: 0;
+  padding: 0;
 }
 
 .payment-icons {
   display: flex;
   gap: 7px;
+}
 
-  .payment-icon-container {
-    background-color: white;
-    padding: 4px 12px;
-    border-radius: 10px;
+.button-pay {
+  margin: 0 5px; /* Spazio tra i bottoni */
+  padding: 10px; /* Ridotto il padding per rendere il bottone più corto */
+  background-color: #ffffff;
+  border-radius: 10px; /* bordi arrotondati */
+  border: none;
+  display: flex; /* abilita il layout flessibile */
+  justify-content: center; /* centra l'immagine orizzontalmente */
+  align-items: center; /* centra l'immagine verticalmente */
+  overflow: hidden; /* per nascondere eventuali parti dell'immagine che fuoriescono dal bottone */
+  position: relative; /* Per consentire il posizionamento assoluto dell'immagine */
+  transition: box-shadow 0.3s ease; /* transizione per l'ombra */
+}
+
+.button-pay:hover {
+  box-shadow: 0 2.5px 5px #1d1d1d; /* ombra più accentuata al passaggio del mouse */
+}
+
+/* Media Queries per la Responsività */
+@media (max-width: 1200px) {
+  .footer-column {
+    width: 30%; /* Cambia la larghezza per schermi più piccoli */
   }
 }
 
-.payment-info img {
-  margin-right: 20px; /* Aggiunge spazio a destra dell'immagine */
+@media (max-width: 768px) {
+  .footer-column {
+    width: 45%; /* Modifica la larghezza per schermi di tablet */
+  }
+
+  #h1-prima-colonna {
+    font-size: 35px; /* Riduce la dimensione del titolo */
+  }
+
+  #h2-prima-colonna {
+    font-size: 12px; /* Riduce la dimensione del sottotitolo */
+  }
 }
 
-.payment-icons img:last-child {
-  margin-right: 0; /* Nessuno spazio extra per l'ultima icona */
-}
+@media (max-width: 480px) {
+  .footer-column {
+    width: 100%; /* Colonne a piena larghezza per schermi piccoli */
+    margin-bottom: 20px; /* Aggiunge spazio tra le colonne */
+  }
 
+  #h1-prima-colonna {
+    font-size: 28px; /* Ulteriore riduzione per schermi piccoli */
+  }
+
+  #h2-prima-colonna {
+    font-size: 10px; /* Ulteriore riduzione per schermi piccoli */
+  }
+
+  .button-pay {
+    width: 60px; /* Riduce la larghezza dei bottoni */
+    height: 40px; /* Imposta l'altezza dei bottoni */
+  }
+}

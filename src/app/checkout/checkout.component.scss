@@ -1,0 +1,219 @@
+.divider {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 80%;
+  height: 5px; /* Altezza della linea */
+  background-color: #CCE6F4; /* Colore della linea */
+  border-radius: 5px; /* Raggio dei bordi */
+}
+
+.container {
+  width: 600px; /* Regola la larghezza del contenitore */
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px; /* Arrotonda gli angoli del contenitore */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-input {
+  height: 30px;
+  width: 80px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #000;
+  border-radius: 10px; /* Arrotonda gli angoli degli input */
+  box-sizing: border-box;
+}
+
+.center {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.align-items-center {
+  display: flex; /* Enable Flexbox layout for horizontal alignment */
+  align-items: center; /* Align items vertically within the container */
+}
+
+/* Responsive column sizing */
+.col-sm-6 {
+  flex: 0 0 75%; /* Set width to 75% on small screens (sm) */
+  max-width: 65%; /* Set a maximum width as a fallback */
+}
+
+.col-sm-3 {
+  flex: 0 0 35%; /* Set width to 35% on small screens (sm) */
+  max-width: 65%; /* Set a maximum width as a fallback */
+}
+
+.button-pay {
+  margin-left: 10px;
+  padding: 10px 20px; /* Ridotto il padding per rendere il bottone più corto */
+  width: 50px; /* larghezza fissa */
+  height: 37px; /* altezza fissa */
+  background-color: #ffffff;
+  border-radius: 10px; /* bordi arrotondati */
+  border: none;
+  border: 1px solid #ccc;
+  display: flex; /* abilita il layout flessibile */
+  justify-content: center; /* centra l'immagine orizzontalmente */
+  align-items: center; /* centra l'immagine verticalmente */
+  overflow: hidden; /* per nascondere eventuali parti dell'immagine che fuoriescono dal bottone */
+  position: relative; /* Per consentire il posizionamento assoluto dell'immagine */
+  transition: box-shadow 0.3s ease; /* transizione per l'ombra */
+}
+
+.button-pay:hover {
+  box-shadow: 0 2.5px 5px #1d1d1d; /* ombra più accentuata al passaggio del mouse */
+}
+
+.payment-button.active {
+  border: 2px solid #007bff; /* Colore del bordo */
+}
+
+.pay {
+  width: 60px;
+  height: 50px;
+  background-color: none;
+  border-color: none;
+  background: none;
+}
+
+h1 {
+  text-align: center;
+  font-size: 28px;
+  color: #BA324F;
+}
+
+h2 {
+  text-align: center;
+  font-size: 18px;
+  color: #175676;
+}
+
+h3 {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #BA324F;
+}
+
+.credit-card-container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px; /* Arrotonda gli angoli del contenitore */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.credit-card-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px; /* Arrotonda gli angoli degli input */
+  box-sizing: border-box;
+}
+
+.credit-card-input:focus {
+  outline: none;
+  border-color: #175676;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.button-blue {
+  padding: 10px 50px;
+  background-color: #175676; /* blu */
+  color: #fff; /* testo bianco */
+  border-radius: 20px; /* bordi arrotondati */
+  font-family: 'lexend', sans-serif;
+  border: none;
+  transition: box-shadow 0.3s ease; /* transizione per l'ombra */
+}
+
+.button-blue:hover {
+  box-shadow: 0 2.5px 5px #4BA3C3; /* ombra più accentuata al passaggio del mouse */
+}
+
+.button-red {
+  padding: 10px 50px;
+  background-color: #BA324F; /* rosso */
+  color: #fff; /* testo bianco */
+  border-radius: 20px; /* bordi arrotondati */
+  font-family: 'lexend', sans-serif;
+  border: none;
+  transition: box-shadow 0.3s ease; /* transizione per l'ombra */
+}
+
+.button-red:hover {
+  box-shadow: 0 2.5px 5px #FF5257; /* ombra al passaggio del mouse */
+}
+
+/* Media Queries per la Responsività */
+@media (max-width: 1200px) {
+  .container {
+    width: 80%; /* Rende il contenitore più largo su schermi più piccoli */
+  }
+
+  .credit-card-container {
+    width: 90%; /* Rende il contenitore della carta di credito più largo */
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%; /* Rende il contenitore quasi a piena larghezza */
+  }
+
+  .button-pay {
+    width: auto; /* Permette al bottone di adattarsi al contenuto */
+  }
+
+  h1 {
+    font-size: 24px; /* Riduce la dimensione del titolo */
+  }
+
+  h2 {
+    font-size: 16px; /* Riduce la dimensione del sottotitolo */
+  }
+
+  h3 {
+    font-size: 12px; /* Riduce la dimensione dell'intestazione h3 */
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 10px; /* Riduce il padding del contenitore */
+  }
+
+  h1 {
+    font-size: 20px; /* Ulteriore riduzione per schermi piccoli */
+  }
+
+  h2 {
+    font-size: 14px; /* Ulteriore riduzione per schermi piccoli */
+  }
+
+  h3 {
+    font-size: 10px; /* Ulteriore riduzione per schermi piccoli */
+  }
+
+  .credit-card-container {
+    width: 100%; /* Piena larghezza per schermi piccoli */
+  }
+
+  .card-input {
+    width: 100%; /* Input a piena larghezza */
+  }
+}

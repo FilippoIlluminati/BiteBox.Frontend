@@ -6,56 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./cart-page.component.scss']
 })
 export class CartPageComponent {
-
-  selectedPaymentMethod: PaymentMethod|any;
-
-  selectPaymentMethod(type: PaymentMethod) {
-
-    this.selectedPaymentMethod=type;
-
-  }
-
-  paymentMethodSelected() {
-
-    console.log(this.selectedPaymentMethod)
-
-  }
-
-  formatCardNumber(event:any) {
-    // Rimuovi tutti i caratteri non numerici
+  formatCardNumber(event: any): void {
+    // Rimuovi tutti i caratteri non numerici e formatta il numero con trattini ogni 4 cifre
     let cardNumber = event.target.value.replace(/\D/g, '');
-    
-    // Formatta il numero con trattini ogni 4 cifre
     cardNumber = cardNumber.replace(/(\d{4})(?=\d)/g, '$1-');
-    
-    // Aggiorna il valore nell'input
     event.target.value = cardNumber;
   }
-
 }
 
-export enum PaymentMethod {
+export class Cvv {
+  numero: string = '';
 
-    VISA,
-
-    MASTERCARD,
-
-    GPAY,
-
-    APPPAY,
-
-    PAYPAL,
-
-    AMAZONPAY
-
-  }
-
-  export class Cvv {
-    numero: string = '';
-  
-    limitaInput(event: any) {
-      if (event.target.value.length > 3) {
-        event.target.value = event.target.value.slice(0, 3);
-      }
+  limitaInput(event: any): void {
+    if (event.target.value.length > 3) {
+      event.target.value = event.target.value.slice(0, 3);
     }
   }
+}

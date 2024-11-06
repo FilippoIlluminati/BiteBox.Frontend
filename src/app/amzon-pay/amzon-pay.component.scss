@@ -1,97 +1,132 @@
 .container {
-    width: 400px;
-    height: 430px;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff;
-  }
-  
-  .form-group {
-    margin-bottom: 15px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  
-  input[type="text"],
-  input[type="password"] {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    box-sizing: border-box;
-  }
-  .checkbox {
-    margin-bottom: 10px;
+  width: 400px;
+  height: 430px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.checkbox {
+  margin-bottom: 10px;
 }
 
 .checkbox label {
-    display: inline-block;
-    margin-right: 5px;
+  display: inline-block;
+  margin-right: 5px;
 }
 
 .checkbox input {
-    width: 15px;
-    height: 15px;
-    margin-top: 3px;
+  width: 15px;
+  height: 15px;
+  margin-top: 3px;
 }
-  
-  .details-link {
-    color: #0066c0;
-    text-decoration: none;
-    margin-left: 5px;
-  }
-  
-  .details-link:hover {
-    text-decoration: underline;
-  }
-  
-  .sign-in-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #f0c14b;
-    border: 1px solid #a88734;
-    border-radius: 3px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  .sign-in-button:hover {
-    background-color: #e2b33c;
-  }
-  
-  .links {
-    margin-top: 15px;
-    text-align: center;
-  }
-  
-  .forgot-password-link,
-  .create-account-link {
-    display: block;
-    margin-top: 5px;
-    color: #0066c0;
-    text-decoration: none;
-  }
-  
-  .forgot-password-link:hover,
-  .create-account-link:hover {
-    text-decoration: underline;
+
+.details-link {
+  color: #0066c0;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.details-link:hover {
+  text-decoration: underline;
+}
+
+.sign-in-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #f0c14b;
+  border: 1px solid #a88734;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.sign-in-button:hover {
+  background-color: #e2b33c;
+}
+
+.links {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.forgot-password-link,
+.create-account-link {
+  display: block;
+  margin-top: 5px;
+  color: #0066c0;
+  text-decoration: none;
+}
+
+.forgot-password-link:hover,
+.create-account-link:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+.logo img {
+  width: 250px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Media Queries per la Responsività */
+@media (max-width: 768px) {
+  .container {
+    width: 90%; /* Rende il contenitore più largo su schermi più piccoli */
+    height: auto; /* Permette all'altezza di adattarsi al contenuto */
   }
 
-   
-  .logo {
-    margin-bottom: 20px;
-  }
-  
   .logo img {
-    width: 250px;
-    display: block;
-    margin: 0 auto;
+    width: 200px; /* Riduce la larghezza del logo su schermi più piccoli */
   }
-  
+
+  .sign-in-button {
+    font-size: 14px; /* Riduce la dimensione del testo del bottone */
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 15px; /* Riduce il padding del contenitore */
+  }
+
+  .logo img {
+    width: 150px; /* Ulteriore riduzione della larghezza del logo */
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    padding: 6px; /* Riduce il padding degli input */
+  }
+
+  .sign-in-button {
+    padding: 8px; /* Riduce il padding del bottone */
+    font-size: 12px; /* Ulteriore riduzione della dimensione del testo del bottone */
+  }
+}
