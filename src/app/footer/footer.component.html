@@ -18,12 +18,17 @@
     </div>
     <div class="footer-column">
       <h2>Sezioni</h2>
-      <!-- TODO: Gestire se autenticato va a login se no al catalogo quando premo ordina-->
-      <p><a href="url">Ordina</a></p>
-      <p><a [routerLink]="['/howitworks']">Come funziona</a></p>
-      <!-- TODO: Mostrare area personale solo se autenticato -->
-      <p><a [routerLink]="'/login'" href="url">Area Personale</a></p>
+      <p>
+        <a *ngIf="isAuthenticated; else loginLink" [routerLink]="'/catalogo'">Ordina</a>
+        <ng-template #loginLink>
+          <a [routerLink]="'/login'">Ordina</a>
+        </ng-template>
+      </p>
+      <p><a [routerLink]="'/howitworks'">Come funziona</a></p>
+      <p><a [routerLink]="'/login'">Area Personale</a></p>
     </div>
+    
+    
     <div class="footer-column">
       <h2>About Us</h2>
       <p><a href="url">Missione</a></p>
@@ -76,6 +81,5 @@
     </div>
   </div>
 </footer>
-
 
 
