@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
@@ -22,6 +23,9 @@ import { SingUpComponent } from './sing-up/sing-up.component';
 import { RitiroComponent } from './ritiro/ritiro.component';
 import { OrdinaComponent } from './ordina/ordina.component';
 import { AreaRiservataComponent } from './area-riservata/area-riservata.component';
+
+
+import { CartPageComponent } from './cart-page/cart-page.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 
 @NgModule({
@@ -32,6 +36,7 @@ import { CheckoutComponent } from './checkout/checkout.component';
     ButtonBlueComponent,
     ButtonRedComponent,
     ButtonEditComponent,
+    FooterComponent,
     FooterComponent,
     LoginComponent,
     AmzonPayComponent,
@@ -45,7 +50,9 @@ import { CheckoutComponent } from './checkout/checkout.component';
     AreaRiservataComponent,
     AmzonPayComponent,
     PaypalComponent,
-    CheckoutComponent
+    NavbarComponent,
+    CartPageComponent,
+    CheckoutComponent,
   ],
 
   imports: [
@@ -53,9 +60,10 @@ import { CheckoutComponent } from './checkout/checkout.component';
     BrowserModule,
     CarouselModule.forRoot(),
     AppRoutingModule,
+    AppRoutingModule,
     BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { }
