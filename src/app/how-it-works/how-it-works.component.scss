@@ -5,7 +5,7 @@
 
 .title {
   color: #ba324f;
-  font-size: 2em;
+  font-size: 3.5em;
   margin: 10px 0;
 }
 
@@ -15,17 +15,29 @@
   margin: 5px 0;
 }
 
+p {
+  font-size: 1.8em; 
+  line-height: 2; 
+}
+
+.large-image {
+  width: 125px; /* Puoi modificare la larghezza a piacimento */
+  height: auto; /* Mantiene le proporzioni */
+}
+
+
 .horizontal-line {
   width: 90%;
-  height: 2px;
+  height: 5px;
   background-color: #CCE6F4;
+  border-radius: 5px;
   margin: 20px auto;
 }
 
 .section-title {
   color: #ba324f;
   font-size: 2em;
-  margin: 20px 0;
+  margin:30px 0;
 }
 
 .custom-table-container {
@@ -40,8 +52,9 @@
 }
 
 .custom-table td {
-  border-right: 2px solid #cce6f4;
-  padding: 20px;
+  border-right: 5px solid #cce6f4;
+  border-radius: 2px;
+  padding: 50px;
   vertical-align: top;
   position: relative;
   text-align: center; /* Center text horizontally */
@@ -55,7 +68,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .custom-table img {
@@ -94,7 +107,8 @@
 }
 
 .new-custom-table td:first-child {
-  border-right: 2px solid #cce6f4;
+  border-right: 5px solid #cce6f4;
+  border-radius: 2px;
 }
 
 .bottom-image-container {
