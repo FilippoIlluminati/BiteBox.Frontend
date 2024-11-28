@@ -5,6 +5,8 @@ import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
 import { HowItWorksComponent } from './how-it-works/how-it-works.component';
 import { OrdinaComponent } from './ordina/ordina.component';
+import { CartPageComponent } from './cart-page/cart-page.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 const routes: Routes = [
   {
@@ -25,13 +27,21 @@ const routes: Routes = [
   },
   {
     path: 'ordina',
-    canActivate: [false], // TODO: add authentication checks
+    //canActivate: [true], // TODO: add authentication checks
     component: OrdinaComponent
+  },
+  {
+    path: 'cartpage',
+    component: CartPageComponent
+  },  
+  {
+    path: 'checkout',
+    component: CheckoutComponent
   },
   {
     path: '**',
     redirectTo: ''
-  }
+  },
 ];
 
 @NgModule({
