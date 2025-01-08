@@ -58,7 +58,7 @@ body {
     .menu-item {
         display: grid;
         grid-template-columns: repeat(4, 1fr);  // 4 colonne fisse
-        gap: 70px 30px;                         // 20px orizzontale e 30px verticale
+        gap: 70px 30px;                         // 70px orizzontale e 30px verticale
         padding: 30px;
         background-color: white;
         border-radius: 8px;

@@ -1,9 +1,9 @@
 <div class="rounded-rectangle">
-  <img src="assets/tortellini_boscaiola.jpg" />
+  <img [src]="imageSrc" alt="{{ title }}" />
 
   <div class="card-body text-center">
-    <h3 class="card-title">Tortellini alla boscaiola</h3>
-    <p class="card-text" style="padding: 5px;">Piatto tradizionale e ricco di sapori, il massimo per chi non vuole rinunciare al meglio. <br><br></p>
+    <h3 class="card-title">{{ title }}</h3>
+    <p class="card-text" style="padding: 5px;">{{ description }}</p>
 
     <div style="display: flex; justify-content: center;">
       <div style="padding-right: 10px;">
