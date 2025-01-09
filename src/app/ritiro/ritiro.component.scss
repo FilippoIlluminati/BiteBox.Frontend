@@ -1,4 +1,4 @@
-
+/* Contenitore principale con larghezza, altezza e centrato automaticamente */
 .container {
     width: 400px;
     height: 250px;
@@ -9,8 +9,9 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-bottom: 10px;
     justify-content: center;
-  }
-  
+}
+
+/* Stile per il checkmark, cerchio verde centrato con un'icona */
 .checkmark {
     width: 50px;
     height: 50px;
@@ -22,21 +23,25 @@
     margin: 20px auto;
 }
 
+/* Colore e dimensione del simbolo di spunta all'interno del checkmark */
 .checkmark span {
     color: #008000;
     font-size: 24px;
 }
 
+/* Stile per il testo del codice con colore scuro e grassetto */
 .codice {
     color: #333;
     font-weight: bold;
 }
 
+/* Stile per il numero del codice con colore verde e dimensione maggiore */
 .codice-numero {
     color: #008000;
     font-size: 24px;
 }
 
+/* Stile per i paragrafi con testo in grassetto */
 p {
-font-weight: bold;
+    font-weight: bold;
 }

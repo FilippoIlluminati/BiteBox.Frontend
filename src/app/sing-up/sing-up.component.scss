@@ -1,3 +1,4 @@
+/* Contenitore principale con larghezza, altezza e centrato automaticamente */
 .container {
     width: 400px;
     height: 470px;
@@ -8,18 +9,20 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+/* Stile per l'intestazione principale con centratura e margine inferiore */
 h1 {
     text-align: center;
     margin-bottom: 15px;
 }
 
+/* Stile per le etichette con grassetto e margine inferiore */
 label {
     display: block;
     margin-bottom: 3px;
     font-weight: bold;
 }
 
-
+/* Stile per gli input con larghezza completa, padding e bordi arrotondati */
 input {
     width: 100%;
     padding: 10px;
@@ -28,6 +31,7 @@ input {
     margin-bottom: 10px;
 }
 
+/* Stile per il pulsante con sfondo rosso, bordi arrotondati e testo bianco */
 button {
     background-color: #C5283D;
     width: 100%;
@@ -38,30 +42,36 @@ button {
     cursor: pointer;
 }
 
+/* Effetto hover sul pulsante con colore di sfondo più scuro */
 button:hover {
     background-color: #cf1212;
 }
 
+/* Stile per i link con colore blu e senza sottolineatura */
 a {
     text-decoration: none;
     color: #007bff;
 }
 
+/* Stile per la checkbox con margine inferiore */
 .checkbox {
     margin-bottom: 10px;
 }
 
+/* Etichetta della checkbox allineata con l'input */
 .checkbox label {
     display: inline-block;
     margin-right: 5px;
 }
 
+/* Stile per l'input della checkbox con dimensioni ridotte */
 .checkbox input {
     width: 15px;
     height: 15px;
     margin-top: 3px;
 }
 
+/* Stile per un pulsante simile ad un link con bordi arrotondati e centrato */
 .button-like {
     display: inline-block;
     background-color: #ffffff;

@@ -1,3 +1,4 @@
+/* Stile per la tabella con larghezza, bordo e margini */
 table {
     width: 40%;
     border-collapse: collapse;
@@ -7,28 +8,33 @@ table {
     border: 1px solid #175676;
 }
 
+/* Celle e intestazioni con padding e bordo */
 th, td {
     padding: 10px;
     border: 1px solid #175676;
 }
 
+/* Intestazioni della tabella con sfondo grigio chiaro e grassetto */
 th {
     background-color: #f4f4f4;
     font-weight: bold;
     border: 1px solid #175676;
 }
 
+/* La prima colonna della tabella con testo in grassetto e centrato */
 td:first-child {
     font-weight: bold;
     color: black;
     text-align: center;
 }
 
+/* Celle della tabella con bordo e allineamento centrato */
 td {
     border-right: 1px solid #175676;
     text-align: center;
     width: 25%;
 
+    /* Immagini all'interno delle celle con dimensioni specifiche */
     img {
         display: block;
         margin: 0 auto;
@@ -36,6 +42,7 @@ td {
     }
 }
 
+/* Intestazione della prima riga con testo in grassetto e colore specifico */
 tr:first-child th {
     font-weight: bold;
     color: #BA324F;
@@ -43,10 +50,12 @@ tr:first-child th {
     background-color: transparent;
 }
 
+/* Altezza delle righe della tabella */
 tr {
     height: 50px;
 }
 
+/* Rimuove il bordo a destra dall'ultima cella */
 td:last-child {
     border-right: none;
 }

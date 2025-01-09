@@ -1,44 +1,49 @@
+// Stile per la barra di navigazione
 .navbar {
-    background-color: #175676;
+    background-color: #175676; // Colore di sfondo blu scuro
     overflow: hidden;
-    border-radius: 0px;
+    border-radius: 0px; // Nessun arrotondamento agli angoli
     margin-bottom: 0;
 }
 
+// Stile per i link all'interno della navbar
 .navbar a {
     float: left;
     display: block;
-    color: #ffffff;
+    color: #ffffff; // Testo bianco
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
+    text-decoration: none; // Nessuna sottolineatura di default
 }
 
+// Allinea a destra un link specifico
 .navbar a.right {
     float: right;
 }
 
+// Stile per il cerchio decorativo
 .circle {
     width: 50px;
     height: 50px;
-    background-color: #BA324F;
-    border-radius: 0 0 50px 0;
+    background-color: #BA324F; // Colore rosso scuro
+    border-radius: 0 0 50px 0; // Angoli arrotondati in basso a destra
     float: left;
     margin-right: 10px;
-    left: 1;
     rotate: 50%;
 }
 
+// Stile per il testo con effetto fade
 .text-fade {
-    opacity: 0.7; /* Opacità di base */
-    transition: opacity 0.5s ease; /* Aggiunge un'animazione di transizione */
+    opacity: 0.7; // Opacità di base
+    transition: opacity 0.5s ease; // Effetto di transizione sulla trasparenza
 }
 
+// Effetto hover per il testo fade
 .text-fade:hover {
-    opacity: 1; /* Aumenta l'opacità durante l'hover */
+    opacity: 1; // Massima opacità al passaggio del mouse
 }
 
-.navbar a:hover{
-    text-decoration: underline;
+// Effetto hover per i link nella navbar
+.navbar a:hover {
+    text-decoration: underline; // Aggiunge una sottolineatura al passaggio del mouse
 }
-
