@@ -12,9 +12,10 @@ export class HomePageComponent {
     { image: './assets/slider2.jpeg' }
   ];
 
-    isAuthenticated: boolean = false;
+    isAuthenticated: boolean = this.authService.isAuth;
 
-    constructor(private authService: AuthService) {}
+    constructor(private authService: AuthService) {
+    }
 
     ngOnInit(): void {
       this.isAuthenticated = this.authService.checkAuthentication();

@@ -9,6 +9,10 @@ export class AuthService {
 
   private googleLogin$ = new Subject<any>();
 
+  get isAuth() {
+    return this.isAuthenticated;
+  }
+
   initGoogleLogin() {
     // @ts-ignore
     google.accounts.id.initialize({
@@ -31,6 +35,7 @@ export class AuthService {
   googleLogin = () => this.googleLogin$.asObservable();
 
   private googleLoginResponse(response: any) {
+    this.isAuthenticated = true;
     this.googleLogin$.next(response);
   }
 
