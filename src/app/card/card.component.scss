@@ -1,61 +1,107 @@
-
 .rounded-rectangle {
   border: 2px solid #FFFFFF;
   border-radius: 20px;
   width: 100%;
-  max-width: 300px;
-  height: 400px;
-  margin: 0 auto;
+  max-width: 350px; /* Aumenta il limite massimo */
+  height: auto; /* Permetti al contenuto di definire l'altezza */
+  margin: 10px auto;
   box-sizing: border-box;
   background-color: #ffffff;
   box-shadow: 0 3px 10px 0 #001A38;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .rounded-rectangle img {
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 45%;
+  height: 200px; /* Aumenta l'altezza per schermi grandi */
   object-fit: cover;
-  border-radius: 20px;
+  border-radius: 20px 20px 0 0;
 }
 
-.button-edit-red {
-  margin-left: 10px;
-  padding: 10px 20px;
-  width: 80px;
-  height: 30px;
+/* Card Body */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Testo all'interno delle card */
+.card-body .card-text {
+  margin-top: 10px;
+  margin-bottom: auto;
+  font-size: 1.2rem; /* Aumenta la dimensione del carattere */
+  line-height: 1.5; /* Aggiungi un'altezza della linea per una migliore leggibilità */
+  font-weight: 500; /* Rendi il testo un po' più visibile */
+  color: #333333; /* Imposta un colore leggermente più scuro per migliorare il contrasto */
+}
+
+/* Titoli all'interno delle card */
+.card-body h3,
+.card-body h4 {
+  font-size: 1.4rem; /* Aumenta la dimensione dei titoli */
+  font-weight: bold; /* Rendi i titoli più evidenti */
+  margin-bottom: 10px;
+  color: #001A38; /* Aggiungi colore per dare enfasi */
+}
+
+.card-body .button-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.button-edit-red,
+.button-edit-blue {
+  padding: 10px 15px;
+  width: 100px; /* Bottoni più larghi */
+  height: 40px; /* Stessa altezza */
   background-color: #ffffff;
   border-radius: 10px;
-  border-color: #000000;
+  border: 2px solid #000000;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
-  position: relative;
+  font-size: 0.9em;
   transition: box-shadow 0.3s ease;
 }
 
+/* Hover Effects */
 .button-edit-red:hover {
   box-shadow: 0 2.5px 5px #FF5257;
 }
 
-.button-edit-blue {
-  margin-right: 10px;
-  padding: 10px 20px;
-  width: 80px;
-  height: 30px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  border-color: #000000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  position: relative;
-  transition: box-shadow 0.3s ease;
-}
-
 .button-edit-blue:hover {
   box-shadow: 0 2.5px 5px #175676;
+}
+
+/* Media query per schermi grandi */
+@media (min-width: 1200px) {
+  .rounded-rectangle {
+    max-width: 300px; /* Aumenta la larghezza massima per schermi grandi */
+  }
+
+  .rounded-rectangle img {
+    height: 250px; /* Aumenta l'altezza delle immagini */
+  }
+
+  .card-body .card-text {
+    font-size: 1.3rem; /* Aumenta leggermente il testo sui display più grandi */
+  }
+
+  .card-body h3,
+  .card-body h4 {
+    font-size: 1.6rem; /* Titoli ancora più grandi su schermi larghi */
+  }
+
+  .button-edit-red,
+  .button-edit-blue {
+    width: 120px; /* Bottoni  più grandi su schermi grandi */
+    font-size: 1rem; /* Aumenta la dimensione del testo */
+  }
 }
