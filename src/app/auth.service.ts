@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import {Subject} from "rxjs";
 
 @Injectable({
   providedIn: 'root'
@@ -6,9 +7,40 @@ import { Injectable } from '@angular/core';
 export class AuthService {
   private isAuthenticated: boolean = false;
 
-  // Simula un login. In un'app reale, questo metodo dovrebbe contattare un server.
+  private googleLogin$ = new Subject<any>();
+
+  get isAuth() {
+    return this.isAuthenticated;
+  }
+
+  initGoogleLogin() {
+    // @ts-ignore
+    google.accounts.id.initialize({
+      client_id: "377248105148-m98jqpt828n5sna0ohtu9bgir2figd1j.apps.googleusercontent.com",
+      callback: this.googleLoginResponse.bind(this),
+      auto_select: false,
+      cancel_on_tap_outside: true,
+
+    });
+    // @ts-ignore
+    google.accounts.id.renderButton(
+      // @ts-ignore
+      document.getElementById("google-button"),
+      { theme: "outline", size: "large", width: "100%" }
+    );
+    // @ts-ignore
+    google.accounts.id.prompt((notification: PromptMomentNotification) => {});
+  }
+
+  googleLogin = () => this.googleLogin$.asObservable();
+
+  private googleLoginResponse(response: any) {
+    this.isAuthenticated = true;
+    this.googleLogin$.next(response);
+  }
+
   login(username: string, password: string): boolean {
-    if (username === 'user' && password === 'password') { // Sostituisci con una logica più sicura
+    if (username === 'user' && password === 'password') {
       this.isAuthenticated = true;
       return true;
     }

@@ -7,6 +7,8 @@ import { HowItWorksComponent } from './how-it-works/how-it-works.component';
 import { OrdinaComponent } from './ordina/ordina.component';
 import { CartPageComponent } from './cart-page/cart-page.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+import {AuthGuard} from "./guards/auth.guard";
+import {LoginGuard} from "./guards/logged-in.guard";
 
 const routes: Routes = [
   {
@@ -15,11 +17,13 @@ const routes: Routes = [
   },
   {
     path: 'login',
-    component: LoginComponent
+    component: LoginComponent,
+    canActivate: [LoginGuard]
   },
   {
     path: 'profile',
-    component: ProfileComponent
+    component: ProfileComponent,
+    canActivate: [AuthGuard]
   },
   {
     path: 'howitworks',
@@ -27,15 +31,17 @@ const routes: Routes = [
   },
   {
     path: 'ordina',
-    //canActivate: [true], // TODO: add authentication checks
+    canActivate: [AuthGuard],
     component: OrdinaComponent
   },
   {
     path: 'cartpage',
+    canActivate: [AuthGuard],
     component: CartPageComponent
-  },  
+  },
   {
     path: 'checkout',
+    canActivate: [AuthGuard],
     component: CheckoutComponent
   },
   {
