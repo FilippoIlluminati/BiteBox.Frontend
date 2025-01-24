@@ -1,0 +1,124 @@
+.how-it-works-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  color: #ba324f;
+  font-size: 3.5em;
+  margin: 10px 0;
+}
+
+.subtitle {
+  color: #ba324f;
+  font-size: 1.5em;
+  margin: 5px 0;
+}
+
+p {
+  font-size: 1.8em; 
+  line-height: 2; 
+}
+
+.large-image {
+  width: 125px; /* Puoi modificare la larghezza a piacimento */
+  height: auto; /* Mantiene le proporzioni */
+}
+
+
+.horizontal-line {
+  width: 90%;
+  height: 5px;
+  background-color: #CCE6F4;
+  border-radius: 5px;
+  margin: 20px auto;
+}
+
+.section-title {
+  color: #ba324f;
+  font-size: 2em;
+  margin:30px 0;
+}
+
+.custom-table-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.custom-table {
+  border-collapse: collapse;
+}
+
+.custom-table td {
+  border-right: 5px solid #cce6f4;
+  border-radius: 2px;
+  padding: 50px;
+  vertical-align: top;
+  position: relative;
+  text-align: center; /* Center text horizontally */
+}
+
+.custom-table td:last-child {
+  border-right: none;
+}
+
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.custom-table img {
+  max-width: 100%;
+  height: auto;
+}
+
+.custom-table p {
+  margin: 0;
+  margin-top: 20px; /* Add margin to space out from the top */
+}
+
+.centered-title {
+  text-align: center;
+  margin-top: 20px;
+  color: #ba324f;
+}
+
+.new-table-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.new-custom-table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.new-custom-table td {
+  padding: 10px;
+  vertical-align: middle;
+  border: none;
+  text-align: center;
+}
+
+.new-custom-table td:first-child {
+  border-right: 5px solid #cce6f4;
+  border-radius: 2px;
+}
+
+.bottom-image-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.bottom-image-container img {
+  max-width: 100%;
+  height: auto;
+}
+

@@ -1,0 +1,86 @@
+<div class="carousel-container">
+  <carousel [interval]="5000" [showIndicators]="false" [isAnimated]="true">
+    <slide *ngFor="let slide of slides">
+      <img [src]="slide.image" alt="Slide image" class="caruosel-image">
+    </slide>
+  </carousel>
+</div>
+
+
+<div class="cards-container">
+    <div class="card">
+        <div class="circle">
+            <img src="assets/dish.svg" alt="ellipse" />
+        </div>
+        <div class="title">Scegli il piatto che preferisci</div>
+        <div class="description">Più di 40 piatti a settimana. Scopri!</div>
+    </div>
+    <div class="card">
+        <div class="circle">
+            <img src="assets/calendar.svg" alt="ellipse" />
+        </div>
+        <div class="title">Seleziona una data</div>
+        <div class="description">Prenota il tuo pasto fino a 30 giorni prima!</div>
+    </div>
+    <div class="card">
+        <div class="circle">
+            <img src="assets/payment-method.svg" alt="ellipse" />
+        </div>
+        <div class="title">Effettua il pagamento</div>
+        <div class="description">Rapido, sicuro e... online!</div>
+    </div>
+    <div class="card">
+        <div class="circle">
+            <img src="assets/shopping-bag.svg" alt="ellipse"/>
+        </div>
+        <div class="title">Ritira il piatto nel giorno stabilito</div>
+        <div class="description">Recati presso il nostro hub e ritira il piatto!</div>
+    </div>
+</div>
+
+<div class="button-container">
+    <a *ngIf="isAuthenticated; else loginLink" [routerLink]="'/catalogo'" class="button-red">Ordina</a>
+    <ng-template #loginLink>
+        <a [routerLink]="'/login'" class="button-red">Ordina</a>
+    </ng-template>
+</div>
+
+
+<div class="divider"></div>
+
+<div class="bookmarks-container">
+    <div class="bookmark">
+        <div class="bookmark-img">
+            <img src="assets/card1.png" >
+        </div>
+        <div class="bookmark-corpo">
+            Cura e passione sono le fondamenta del nostro lavoro, rispettiamo la natura compiendo scelte sostenibili per un furuto migliore e cibo più sano.
+        </div>
+    </div>
+    <div class="bookmark">
+        <div class="bookmark-img">
+            <img src="assets/card2.png" >
+        </div>
+        <div class="bookmark-corpo">
+            Le nostre materie prime di ottima qualità garantiscono pasti sani e nutrienti per aiutarti ad affrontare le giornate più dure.
+        </div>
+    </div>
+    <div class="bookmark">
+        <div class="bookmark-img">
+            <img src="assets/card3.png" >
+        </div>
+        <div class="bookmark-corpo">
+            I partner a cui ci affidiamo garantiscono prodotti eccellenti e piatti tradizionali ed innovativi per tutti i gusti.
+        </div>
+    </div>
+    <div class="bookmark">
+        <div class="bookmark-img">
+            <img src="assets/card4.png" >
+        </div>
+        <div class="bookmark-corpo">
+            Packaging bio e compostabile rendono la nostra iniziativa sostenibile ed a impatto zero sull’ambiente.
+        </div>
+    </div>
+</div>
+
+<div class="divider"></div>

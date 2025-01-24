@@ -1,0 +1,8 @@
+<div class="navbar">
+    <div class="circle"></div>
+    <a [routerLink]="'home'" class="text-fade">Home</a>
+    <a [routerLink]="'ordina'" *ngIf="isAuthenticated" class="text-fade">Ordina</a>
+    <a [routerLink]="'howitworks'" class="text-fade">Come funziona</a>
+    <a [routerLink]="'login'" *ngIf="!isAuthenticated" class="text-fade right">Login</a>
+    <a [routerLink]="'cartpage'" *ngIf="isAuthenticated" class="text-fade right">Carrello</a>
+</div>

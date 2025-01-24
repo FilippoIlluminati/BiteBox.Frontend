@@ -1,0 +1,90 @@
+// Contenitore principale della pagina profilo con layout flex e colori scuri
+.profile-container {
+  display: flex;
+  background-color: #121212; // Sfondo scuro per l'intera pagina
+  color: #fff; // Testo bianco
+  height: 100vh; // Altezza 100% della viewport
+}
+
+// Barra laterale con informazioni dell'utente e menu
+.sidebar {
+  width: 250px;
+  padding: 20px;
+  background-color: #1c1c1e; // Sfondo scuro leggermente più chiaro
+
+  ul {
+      list-style: none; // Rimuove i bullet point
+      padding: 0;
+
+      // Informazioni utente nella sidebar
+      .user-info {
+          text-align: center;
+
+          img {
+              border-radius: 50%; // Immagine del profilo rotonda
+              width: 80px;
+              margin-bottom: 10px;
+          }
+
+          h3 {
+              margin: 10px 0 5px;
+              font-size: 18px;
+          }
+
+          p {
+              font-size: 14px;
+              color: #bbb; // Testo grigio chiaro
+          }
+      }
+
+      // Stile per gli elementi del menu
+      li {
+          margin: 20px 0;
+
+          a {
+              color: #fff;
+              text-decoration: none;
+              font-size: 16px;
+              display: block;
+              padding: 10px;
+              border-radius: 5px;
+
+              &:hover {
+                  background-color: #292929; // Sfondo scuro al passaggio del mouse
+              }
+          }
+      }
+  }
+}
+
+// Contenuto principale del profilo
+.profile-content {
+  flex-grow: 1; // Si espande per occupare lo spazio disponibile
+  padding: 40px;
+  background-color: #181818; // Sfondo leggermente più chiaro
+
+  h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+  }
+
+  // Stile per immagine profilo e informazioni account
+  .profile-picture,
+  .account-info {
+      background-color: #292929; // Sfondo scuro per i box
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+
+      img {
+          width: 80px;
+          border-radius: 50%;
+          margin-bottom: 10px;
+      }
+
+      p {
+          font-size: 14px;
+          color: #bbb; // Testo grigio chiaro
+      }
+  }
+}

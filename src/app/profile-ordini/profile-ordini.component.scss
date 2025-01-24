@@ -1,0 +1,168 @@
+/* Reimposta margini, padding e box-sizing di default per tutti gli elementi */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+/* Contenitore principale con flexbox e altezza pari alla finestra intera */
+
+.container {
+    display: flex;
+    height: 100vh;
+
+}
+
+/* Stile per la sidebar con flexbox centrato e sfondo blu scuro */
+
+.sidebar {
+    background-color: #003d66;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+/* Stile per la lista non ordinata all'interno della sidebar */
+    ul {
+        list-style: none;
+
+/* Stile per ogni elemento della lista con padding ed effetti hover */
+
+        li {
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-align: center;
+            color: white;
+
+/* Elemento attivo con colore di sfondo diverso */
+
+            &.active {
+                background-color: #69b0e4;
+            }
+
+ /* Effetto hover escludendo il pulsante 'exit' */
+
+            &:hover:not(.exit) {
+                background-color: #69b0e4;
+            }
+/* Stile speciale per il pulsante exit */        }
+
+        .exit {
+            background-color: #c0392b;
+            color: white;
+
+            &:hover {
+                background-color: #e74c3c;
+            }
+        }
+    }
+}
+
+/* Sezione del contenuto con flexbox centrato e padding */
+.content {
+    flex-grow: 1;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+/* Stile per il form con sfondo, padding e ombreggiatura */
+
+    form {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 350px;
+
+/* Stile per il gruppo di input con spazio tra gli elementi */
+        .form-group {
+            margin-bottom: 20px;
+
+/* Stile per l'etichetta */
+
+            label {
+                display: block;
+                margin-bottom: 5px;
+                color: #333333;
+            }
+/* Stile per il campo input */
+            input {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #cccccc;
+                border-radius: 4px;
+            }
+/* Stile per input in sola lettura */
+            input[readonly] {
+                background-color: #e0e0e0;
+                color: #666666;
+            }
+        }
+
+/* Stile per il pulsante di eliminazione account con sfondo rosso e effetto hover */
+        .delete-account {
+            width: 100%;
+            padding: 10px;
+            background-color: #c0392b;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: #e74c3c;
+            }
+        }
+    }
+}
+
+/* Stile per il footer con testo centrato e sfondo grigio chiaro */
+
+.receipt-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff; /* Outer background color set to white /
+  }
+
+  .receipt {
+    background-color: #e6f7ff; / Light blue background for the receipt */
+    border: 1px solid #cce7ff;
+    border-radius: 5px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Sezioni di intestazione e piè di pagina della ricevuta con flexbox */
+  .header, .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* Stile per numero d'ordine e data in grassetto */
+  .order-number, .date {
+    font-weight: bold;
+  }
+
+  /* Paragrafi del corpo con margine per la spaziatura */
+  .body p {
+    margin: 5px 0;
+  }
+
+  /* Prezzo allineato a destra */
+  .price {
+    float: right;
+  }
+
+  /* Totale in grassetto */
+  .total {
+    font-weight: bold;
+  }

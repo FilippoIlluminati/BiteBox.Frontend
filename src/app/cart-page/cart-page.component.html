@@ -1,0 +1,33 @@
+<div class="cart-container">
+    <h2>Riepilogo</h2>
+    <table class="cart-summary">
+        <thead>
+            <tr>
+                <th class="rounded-left text-left border-right">Prodotto</th>
+                <th class="text-center border-right">Quantità</th>
+                <th class="text-center border-right">Prezzo Unitario</th>
+                <th class="text-center rounded-right">Prezzo Totale</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="text-left border-right">Tortellini alla Boscaiola</td>
+                <td class="text-center border-right">1</td>
+                <td class="text-center border-right">€4,00</td>
+                <td class="text-center">€4,00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3" class="text-left"></td>
+                <td class="text-center">€8,00</td> <!-- Centrato il prezzo in questa cella -->
+            </tr>
+        </tfoot>
+    </table>
+    <div class="cart-buttons">
+        <a [routerLink]="'/ordina'" class="button-blue">Continua a Scegliere</a>
+        <a [routerLink]="'/checkout'" class="button-red">Vai al Pagamento</a>
+
+    </div>
+  </div>
+  

@@ -1,0 +1,85 @@
+<footer>
+  <div class="footer-columns">
+    <div class="footer-column">
+      <h1 id="h1-prima-colonna">BiteBox</h1>
+      <h2 id="h2-prima-colonna">Food Evolution</h2>
+      <div class="icon-container">
+        <p id="p-prima-colonna">
+          <img src="assets/telefono.svg" alt="Telefono">
+          +39 366 3069 876
+        </p>
+      </div>
+      <div class="icon-container">
+        <p id="p-prima-colonna">
+          <img src="assets/mail.svg" alt="Mail" />
+          {{'info@bitebox.com'}}
+        </p>
+      </div>
+    </div>
+    <div class="footer-column">
+      <h2>Sezioni</h2>
+      <p>
+        <a *ngIf="isAuthenticated; else loginLink" [routerLink]="'/catalogo'">Ordina</a>
+        <ng-template #loginLink>
+          <a [routerLink]="'/login'">Ordina</a>
+        </ng-template>
+      </p>
+      <p><a [routerLink]="'/howitworks'">Come funziona</a></p>
+      <p><a [routerLink]="'/login'">Area Personale</a></p>
+    </div>
+    
+    
+    <div class="footer-column">
+      <h2>About Us</h2>
+      <p><a href="url">Missione</a></p>
+      <p><a [href]="'https://www.google.com/maps?q=Via+dell%27Industria+36,+Corridonia,+Macerata,+Italy'"  rel="noopener noreferrer">Dove Siamo</a></p>
+      <p><a href="url">Chi siamo</a></p>
+    </div>
+    <div class="footer-column">
+      <h2>Info</h2>
+      <p><a href="url">Contatti</a></p>
+      <p><a href="url">Privacy Policy</a></p>
+      <p><a href="url">Cookie Policy</a></p>
+    </div>
+    <div class="footer-column">
+      <h2>Canali Social</h2>
+      <div class="icon-grid">
+        <img src="assets/facebook.svg" alt="Facebook">
+        <img src="assets/instagram.svg" alt="Instagram">
+        <img src="assets/twitter.svg" alt="Twitter">
+        <img src="assets/tripadvisor.svg" alt="Trip Advisor">
+      </div>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <div class="additional-row">
+    <div class="home-info">
+      <img src="assets/home.svg" alt="Icona Home">
+      <p>Via dell'Industria 36, Corridonia, Macerata, Italy</p>
+    </div>
+    <div class="payment-info">
+      <span class="slang">
+        <p>Pagamento sicuro!</p>
+      </span>
+      <div class="payment-icons">
+        <span class="payment-icon-container">
+          <img class="payment-icon" src="assets/mastercard.svg" alt="Mastercard" />
+        </span>
+        <span class="payment-icon-container">
+          <img class="payment-icon" src="assets/visa.svg" alt="Visa" />
+        </span>
+        <span class="payment-icon-container">
+          <img class="payment-icon" src="assets/goopay.svg" alt="Google Pay" />
+        </span>
+        <span class="payment-icon-container">
+          <img class="payment-icon" src="assets/apppay.svg" alt="Apple Pay" />
+        </span>
+        <span class="payment-icon-container">
+          <img class="payment-icon" src="assets/paypal.svg" alt="PayPal" />
+        </span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+

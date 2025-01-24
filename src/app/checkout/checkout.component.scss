@@ -1,0 +1,156 @@
+.container {
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.center {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.button-pay {
+  margin-left: 10px;
+  padding: 10px 20px;
+  width: 50px;
+  height: 37px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  transition: box-shadow 0.3s ease;
+}
+
+.button-pay:hover {
+  box-shadow: 0 2.5px 5px #1d1d1d;
+}
+
+h1 {
+  text-align: center;
+  font-size: 28px;
+  color: #BA324F;
+}
+
+h2 {
+  text-align: center;
+  font-size: 18px;
+  color: #175676;
+}
+
+h3 {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #BA324F;
+}
+
+.credit-card-container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.credit-card-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.credit-card-input:focus {
+  outline: none;
+  border-color: #175676;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.button-blue {
+  padding: 10px 50px;
+  background-color: #175676;
+  color: #fff;
+  border-radius: 20px;
+  font-family: 'lexend', sans-serif;
+  border: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.button-blue:hover {
+  box-shadow: 0 2.5px 5px #4BA3C3;
+}
+
+@media (max-width: 1200px) {
+  .container {
+      width: 80%;
+  }
+
+  .credit-card-container {
+      width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+      width: 90%;
+  }
+
+  .button-pay {
+      width: auto;
+  }
+
+  h1 {
+      font-size: 24px;
+  }
+
+  h2 {
+      font-size: 16px;
+  }
+
+  h3 {
+      font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+      padding: 10px;
+  }
+
+  h1 {
+      font-size: 20px;
+  }
+
+  h2 {
+      font-size: 14px;
+  }
+
+  h3 {
+      font-size: 10px;
+  }
+
+  .credit-card-container {
+      width: 100%;
+  }
+
+  .credit-card-input {
+      width: 100%;
+  }
+}

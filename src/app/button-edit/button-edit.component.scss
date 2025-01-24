@@ -1,0 +1,27 @@
+.button-edit {
+    padding: 10px 20px; /* Ridotto il padding per rendere il bottone più corto */
+    width: 80px; /* larghezza fissa */
+    height: 30px; /* altezza fissa */
+    background-color: #ffffff; 
+    border-radius: 15px; /* bordi arrotondati */
+    border-color: #000000;
+    display: flex; /* abilita il layout flessibile */
+    justify-content: center; /* centra l'immagine orizzontalmente */
+    align-items: center; /* centra l'immagine verticalmente */
+    overflow: hidden; /* per nascondere eventuali parti dell'immagine che fuoriescono dal bottone */
+    position: relative; /* Per consentire il posizionamento assoluto dell'immagine */
+    transition: box-shadow 0.3s ease; /* transizione per l'ombra */
+}
+
+.button-edit:hover {
+    box-shadow: 0 2.5px 5px #1d1d1d; /* ombra più accentuata al passaggio del mouse */
+}
+
+.button-edit img {
+    width: auto; /* Imposta la larghezza dell'immagine al 100% del contenitore */
+    height: auto; /* Imposta l'altezza dell'immagine in modo proporzionale */
+    position: relative; /* Assicura che l'immagine rispetti la posizione del bottone */
+}
+
+
+  

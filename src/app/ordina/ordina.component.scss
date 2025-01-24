@@ -1,0 +1,77 @@
+// Definizione delle variabili per il tema e i colori
+$font-family: 'Arial', sans-serif; // Font principale dell'app
+$primary-color: #ffff; // Colore primario per titoli e bordi
+$secondary-color: #FDF7F3; // Colore di sfondo beige tenue
+$accent-color: #f16d61; // Colore di accento per elementi evidenziati
+$text-color: #4A4A4A; // Colore del testo principale
+
+// Resetta i margini e padding di default e gestisce il box-sizing
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Stile generale del corpo della pagina
+body {
+    font-family: $font-family;
+    background-color: $secondary-color;
+    color: $text-color;
+}
+
+// Contenitore principale della pagina
+.container {
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+// Box per il titolo con stile particolare
+.title-box {
+    color: $accent-color;
+    font-size: 70px;
+    font-weight: bold;
+    font-style: italic;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 15px 0;
+    margin: 50px 0;  // Spazio sopra e sotto per separare le sezioni
+    border-radius: 8px;
+}
+
+// Stile per il menu e gli elementi del menu
+.menu {
+    margin: 0;
+
+    // Titolo del menu
+    h1 {
+        font-size: 26px;
+        color: $primary-color;
+        text-align: center;
+        padding: 5px;
+        border-bottom: 2px solid $primary-color;
+        margin: 0;
+        margin-top: 150px;
+    }
+
+    // Stile degli elementi del menu con griglia e spaziatura
+    .menu-item {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);  // 4 colonne fisse
+        gap: 70px 30px;                         // 70px orizzontale e 30px verticale
+        padding: 30px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        margin-bottom: 60px;
+        width: 85%;                             // Larghezza per adattarsi al container
+        margin: 0 auto;                         // Centra il contenitore `.menu-item`
+    }
+}
+
+
+
+
+

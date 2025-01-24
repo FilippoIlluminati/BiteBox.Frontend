@@ -1,0 +1,13 @@
+.button-red {
+    padding: 10px 50px;
+    background-color: #BA324F; /* rosso */
+    color: #fff; /* testo bianco */
+    border-radius: 20px; /* bordi arrotondati */
+    font-family: 'lexend', sans-serif;
+    border: none;
+    transition: box-shadow 0.3s ease; /* transizione per l'ombra */
+  }
+  
+  .button-red:hover {
+    box-shadow: 0 2.5px 5px #FF5257; /* ombra al passaggio del mouse */
+  }

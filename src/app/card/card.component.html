@@ -1,0 +1,18 @@
+<div class="rounded-rectangle">
+  <img [src]="imageSrc" alt="{{ title }}" />
+
+  <div class="card-body text-center">
+    <h3 class="card-title">{{ title }}</h3>
+    <p class="card-text" style="padding: 5px;">{{ description }}</p>
+
+    <div style="display: flex; justify-content: center;">
+      <div style="padding-right: 10px;">
+        <button class="button-edit-blue"> Info </button>
+      </div>
+
+      <div style="padding-left: 10px;">
+        <button class="button-edit-red"> Aggiungi </button>
+      </div>
+    </div>
+  </div>
+</div>
