@@ -1,12 +1,14 @@
 <div class="carousel-container">
-  <carousel [interval]="5000" [showIndicators]="false" [isAnimated]="true">
-    <slide *ngFor="let slide of slides">
-      <img [src]="slide.image" alt="Slide image" class="caruosel-image">
-    </slide>
-  </carousel>
-</div>
-
-
+    <div class="carousel-gradient-left"></div>
+    <div class="carousel-gradient-right"></div>
+    <carousel [interval]="5000" [showIndicators]="false" [isAnimated]="true">
+      <slide *ngFor="let slide of slides">
+        <img [src]="slide.image" alt="Slide image" class="carousel-image">
+      </slide>
+    </carousel>
+    <div class="carousel-gradient-bottom"></div>
+  </div>
+  
 <div class="cards-container">
     <div class="card">
         <div class="circle">
@@ -83,4 +85,4 @@
     </div>
 </div>
 
-<div class="divider"></div>
+<div class="dividerr"></div>

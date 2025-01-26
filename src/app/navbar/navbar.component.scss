@@ -1,49 +1,62 @@
 // Stile per la barra di navigazione
 .navbar {
-    background-color: #175676; // Colore di sfondo blu scuro
-    overflow: hidden;
-    border-radius: 0px; // Nessun arrotondamento agli angoli
-    margin-bottom: 0;
+    background: linear-gradient(90deg, #BA324F, #175676); /* Gradiente da rosso a blu */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px; /* Spaziatura laterale */
+    height: 60px; /* Altezza fissa */
+    border-radius: 0; /* Nessun border-radius */
+    position: fixed; /* Navbar fissa */
+    top: 0;
+    left: 0;
+    width: 100%; /* Occupa tutta la larghezza */
+    z-index: 1000; /* Rimane sopra altri contenuti */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Leggera ombra */
 }
 
 // Stile per i link all'interno della navbar
 .navbar a {
-    float: left;
-    display: block;
-    color: #ffffff; // Testo bianco
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none; // Nessuna sottolineatura di default
+    color: #ffffff; /* Testo bianco di default */
+    text-decoration: none;
+    margin: 0 15px; /* Margine standard */
+    font-size: 16px;
+    font-weight: bold;
+    transition: transform 0.2s ease, color 0.3s ease; /* Effetto hover leggero */
 }
 
-// Allinea a destra un link specifico
-.navbar a.right {
-    float: right;
-}
-
-// Stile per il cerchio decorativo
-.circle {
-    width: 50px;
-    height: 50px;
-    background-color: #BA324F; // Colore rosso scuro
-    border-radius: 0 0 50px 0; // Angoli arrotondati in basso a destra
-    float: left;
-    margin-right: 10px;
-    rotate: 50%;
-}
-
-// Stile per il testo con effetto fade
-.text-fade {
-    opacity: 0.7; // Opacità di base
-    transition: opacity 0.5s ease; // Effetto di transizione sulla trasparenza
-}
-
-// Effetto hover per il testo fade
-.text-fade:hover {
-    opacity: 1; // Massima opacità al passaggio del mouse
-}
-
-// Effetto hover per i link nella navbar
 .navbar a:hover {
-    text-decoration: underline; // Aggiunge una sottolineatura al passaggio del mouse
+    transform: scale(1.05); /* Leggero ingrandimento */
+    color: #ffffff; /* Bianco puro */
+    font-weight: bolder; /* Effetto visivo aggiuntivo */
+}
+
+.navbar .left-section {
+    display: flex;
+    align-items: center;
+    margin-right: auto; /* Sposta questa sezione completamente a sinistra */
+    gap: 50px; /* Spaziatura tra i link */
+}
+
+.navbar .center-section {
+    position: absolute; /* Per posizionarlo al centro */
+    left: 50%; /* Sposta l'elemento al centro orizzontalmente */
+    transform: translateX(-50%); /* Centra completamente rispetto alla pagina */
+    text-align: center;
+}
+
+.navbar .center-section .brand {
+    color: #ffffff; /* Colore bianco per il logo */
+    font-size: 32px; /* Dimensione aumentata */
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navbar .right-section {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Sposta questa sezione completamente a destra */
+    gap: 15px; /* Spaziatura tra i link */
 }
