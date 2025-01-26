@@ -1,24 +1,23 @@
-html, body {
-  height: 100%; /* Imposta l'altezza del documento */
-  margin: 0; /* Rimuove margini predefiniti */
-}
-
-body {
-  display: flex;
-  flex-direction: column; /* Dispone gli elementi in colonna */
-}
-
 footer {
-  background-color: #175676;
+  background: linear-gradient(90deg, #175676, #BA324F);
   color: white;
   padding: 20px;
-  margin-top: auto; /* Spinge il footer verso il basso */
+  margin-top: auto;
+  width: 100%;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .footer-columns {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap; /* Permette il wrap delle colonne */
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .footer-column {
@@ -27,52 +26,36 @@ footer {
   align-items: center;
   flex-direction: column;
   width: 20%;
+  margin-bottom: 20px;
 }
 
 .divider {
-  border-bottom: 2px solid #CCE6F4;
+  border-bottom: 3px solid #CCE6F4;
   margin: 20px 0;
   width: 100%;
+  border-radius: 3px;
 }
 
 .additional-row {
-  margin: 0 10px;
+  margin: 20px 10px;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
 }
 
 #h1-prima-colonna {
-  font-size: 50px;
+  font-size: 55px;
   margin-top: 0;
+  text-align: center;
 }
 
 #h2-prima-colonna {
-  font-size: 15px;
+  font-size: 20px;
   margin-top: 0;
-}
-
-#p-prima-colonna {
-  position: relative;
-  color: color(srgb 1 0.3207 0.3425);
-  text-decoration: none;
-}
-
-h2 {
-  color: white;
-}
-
-a {
-  color: white;
-  transition: all 0.3s;
-}
-
-a:hover {
-  font-weight: bold;
-  font-size: 11pt;
-}
-
-.icon-container {
-  display: flex;
-  align-items: center;
+  text-align: center;
 }
 
 .icon-container img {
@@ -90,12 +73,6 @@ a:hover {
 .icon-grid img {
   width: 24px;
   height: 24px;
-}
-
-.additional-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .home-info {
@@ -117,72 +94,85 @@ a:hover {
   margin-right: 10px;
 }
 
-.home-info p,
-.payment-info p {
-  margin: 0;
-  padding: 0;
-}
-
 .payment-icons {
   display: flex;
   gap: 7px;
 }
 
+a {
+  color: white;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: bold;
+  font-size: 11pt;
+}
+
 .button-pay {
-  margin: 0 5px; /* Spazio tra i bottoni */
-  padding: 10px; /* Ridotto il padding per rendere il bottone più corto */
+  margin: 0 5px;
+  padding: 10px;
   background-color: #ffffff;
-  border-radius: 10px; /* bordi arrotondati */
+  border-radius: 10px;
   border: none;
-  display: flex; /* abilita il layout flessibile */
-  justify-content: center; /* centra l'immagine orizzontalmente */
-  align-items: center; /* centra l'immagine verticalmente */
-  overflow: hidden; /* per nascondere eventuali parti dell'immagine che fuoriescono dal bottone */
-  position: relative; /* Per consentire il posizionamento assoluto dell'immagine */
-  transition: box-shadow 0.3s ease; /* transizione per l'ombra */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: box-shadow 0.3s ease;
 }
 
 .button-pay:hover {
-  box-shadow: 0 2.5px 5px #1d1d1d; /* ombra più accentuata al passaggio del mouse */
+  box-shadow: 0 2.5px 5px #1d1d1d;
 }
 
-/* Media Queries per la Responsività */
 @media (max-width: 1200px) {
   .footer-column {
-    width: 30%; /* Cambia la larghezza per schermi più piccoli */
+    width: 30%;
   }
 }
 
 @media (max-width: 768px) {
   .footer-column {
-    width: 45%; /* Modifica la larghezza per schermi di tablet */
+    width: 45%;
   }
 
   #h1-prima-colonna {
-    font-size: 35px; /* Riduce la dimensione del titolo */
+    font-size: 35px;
   }
 
   #h2-prima-colonna {
-    font-size: 12px; /* Riduce la dimensione del sottotitolo */
+    font-size: 12px;
+  }
+
+  .footer-columns {
+    justify-content: center;
   }
 }
 
 @media (max-width: 480px) {
   .footer-column {
-    width: 100%; /* Colonne a piena larghezza per schermi piccoli */
-    margin-bottom: 20px; /* Aggiunge spazio tra le colonne */
+    width: 100%;
+    margin-bottom: 20px;
   }
 
   #h1-prima-colonna {
-    font-size: 28px; /* Ulteriore riduzione per schermi piccoli */
+    font-size: 28px;
   }
 
   #h2-prima-colonna {
-    font-size: 10px; /* Ulteriore riduzione per schermi piccoli */
+    font-size: 10px;
   }
 
   .button-pay {
-    width: 60px; /* Riduce la larghezza dei bottoni */
-    height: 40px; /* Imposta l'altezza dei bottoni */
+    width: 60px;
+    height: 40px;
+  }
+
+  .additional-row {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
   }
 }

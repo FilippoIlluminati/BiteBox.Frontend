@@ -20,8 +20,8 @@ export class AuthService {
       callback: this.googleLoginResponse.bind(this),
       auto_select: false,
       cancel_on_tap_outside: true,
-
     });
+    
     // @ts-ignore
     google.accounts.id.renderButton(
       // @ts-ignore
