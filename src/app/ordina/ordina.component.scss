@@ -1,77 +1,113 @@
-// Definizione delle variabili per il tema e i colori
-$font-family: 'Arial', sans-serif; // Font principale dell'app
-$primary-color: #ffff; // Colore primario per titoli e bordi
-$secondary-color: #FDF7F3; // Colore di sfondo beige tenue
-$accent-color: #f16d61; // Colore di accento per elementi evidenziati
-$text-color: #4A4A4A; // Colore del testo principale
-
-// Resetta i margini e padding di default e gestisce il box-sizing
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-// Stile generale del corpo della pagina
 body {
-    font-family: $font-family;
-    background-color: $secondary-color;
-    color: $text-color;
+    font-family: 'Lexend', sans-serif;
+    background-color: #FDF7F3;
+    color: #4A4A4A;
 }
 
-// Contenitore principale della pagina
 .container {
-    width: 85%;
+    width: 95%;
     margin: 0 auto;
     padding: 20px;
 }
 
-// Box per il titolo con stile particolare
-.title-box {
-    color: $accent-color;
-    font-size: 70px;
+/* Titolo principale */
+.main-title {
+    color: #ba324f;
+    font-size: 3em;
     font-weight: bold;
-    font-style: italic;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
     text-align: center;
-    padding: 15px 0;
-    margin: 50px 0;  // Spazio sopra e sotto per separare le sezioni
-    border-radius: 8px;
+    margin-bottom: 40px;
+    position: relative;
 }
 
-// Stile per il menu e gli elementi del menu
-.menu {
-    margin: 0;
+/* Categoria */
+.category-container {
+    margin-bottom: 50px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 
+        0 10px 20px -10px rgba(0, 0, 0, 0.5),
+        0 -10px 20px -10px rgba(0, 0, 0, 0.5);
+}
 
-    // Titolo del menu
-    h1 {
-        font-size: 26px;
-        color: $primary-color;
-        text-align: center;
-        padding: 5px;
-        border-bottom: 2px solid $primary-color;
-        margin: 0;
-        margin-top: 150px;
-    }
+.category-header {
+    margin-bottom: 20px;
+}
 
-    // Stile degli elementi del menu con griglia e spaziatura
+.title-box {
+    color: #ba324f;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Stile delle card */
+.menu-item {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+/* Responsive Design */
+
+/* Schermi medi (tablet) */
+@media (max-width: 1024px) {
     .menu-item {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);  // 4 colonne fisse
-        gap: 70px 30px;                         // 70px orizzontale e 30px verticale
-        padding: 30px;
-        background-color: white;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-        margin-bottom: 60px;
-        width: 85%;                             // Larghezza per adattarsi al container
-        margin: 0 auto;                         // Centra il contenitore `.menu-item`
+        grid-template-columns: repeat(3, 1fr); /* 3 colonne su tablet */
+        gap: 20px;
+    }
+
+    .main-title {
+        font-size: 2.5em; /* Riduci dimensione del titolo principale */
+    }
+
+    .title-box {
+        font-size: 1.8em; /* Riduci dimensione dei titoli di categoria */
+    }
+
+    .category-container {
+        padding: 15px; /* Riduci il padding per adattarlo meglio */
     }
 }
 
+/* Schermi piccoli (smartphone) */
+@media (max-width: 768px) {
+    .menu-item {
+        grid-template-columns: repeat(2, 1fr); /* 2 colonne su smartphone */
+        gap: 15px;
+    }
 
+    .main-title {
+        font-size: 2em; /* Riduci ulteriormente il titolo principale */
+    }
 
+    .title-box {
+        font-size: 1.6em; /* Riduci ancora i titoli di categoria */
+    }
 
+    .category-container {
+        padding: 10px; /* Riduci il padding per smartphone */
+    }
+}
 
+/* Schermi molto piccoli (telefoni compatti) */
+@media (max-width: 480px) {
+    .menu-item {
+        grid-template-columns: 1fr; /* Una colonna su schermi molto piccoli */
+        gap: 10px;
+    }
+
+    .main-title {
+        font-size: 1.8em; /* Dimensione ancora più piccola per il titolo principale */
+    }
+
+    .title-box {
+        font-size: 1.4em; /* Riduci i titoli per categorie */
+    }
+
+    .category-container {
+        padding: 8px; /* Riduci ulteriormente il padding */
+    }
+}

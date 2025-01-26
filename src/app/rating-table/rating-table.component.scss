@@ -1,48 +1,44 @@
-/* Stile per la tabella con larghezza, bordo e margini */
 table {
-    width: 40%;
-    border-collapse: collapse;
+    width: 90%;
+    max-width: 600px;
     margin: 20px auto;
     font-size: 16px;
     text-align: left;
-    border: 1px solid #175676;
+    border: 2px solid #175676; /* Bordi esterni visibili e spessi 2px */
+    border-radius: 13px; /* Arrotonda i bordi esterni */
+    border-collapse: separate; /* Necessario per mantenere i bordi esterni */
+    border-spacing: 0; /* Rimuove gli spazi tra le celle */
+    overflow: hidden; /* Per rispettare i bordi arrotondati */
 }
 
-/* Celle e intestazioni con padding e bordo */
 th, td {
     padding: 10px;
-    border: 1px solid #175676;
+    border: 1px solid #175676; /* Bordi interni blu */
 }
 
-/* Intestazioni della tabella con sfondo grigio chiaro e grassetto */
 th {
     background-color: #f4f4f4;
     font-weight: bold;
-    border: 1px solid #175676;
+    text-align: center;
 }
 
-/* La prima colonna della tabella con testo in grassetto e centrato */
 td:first-child {
     font-weight: bold;
-    color: black;
+    color: rgb(63, 1, 1);
     text-align: center;
 }
 
-/* Celle della tabella con bordo e allineamento centrato */
 td {
-    border-right: 1px solid #175676;
     text-align: center;
     width: 25%;
-
-    /* Immagini all'interno delle celle con dimensioni specifiche */
-    img {
-        display: block;
-        margin: 0 auto;
-        width: 30px;
-    }
 }
 
-/* Intestazione della prima riga con testo in grassetto e colore specifico */
+td img {
+    display: block;
+    margin: 0 auto;
+    width: 30px; /* Dimensione delle icone */
+}
+
 tr:first-child th {
     font-weight: bold;
     color: #BA324F;
@@ -50,12 +46,39 @@ tr:first-child th {
     background-color: transparent;
 }
 
-/* Altezza delle righe della tabella */
 tr {
     height: 50px;
 }
 
-/* Rimuove il bordo a destra dall'ultima cella */
-td:last-child {
-    border-right: none;
+/* Arrotondamenti agli angoli esterni */
+tr:first-child th:first-child {
+    border-top-left-radius: 10px;
+}
+
+tr:first-child th:last-child {
+    border-top-right-radius: 10px;
+}
+
+tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+/* Responsività */
+@media (max-width: 768px) {
+    table {
+        font-size: 14px;
+        width: 100%; /* Rende la tabella più flessibile */
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    td img {
+        width: 25px; /* Riduce la dimensione delle icone */
+    }
 }

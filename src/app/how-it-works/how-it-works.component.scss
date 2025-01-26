@@ -26,7 +26,7 @@
   left: 50%;
   transform: translateX(-50%);
   width: 5px;
-  background: linear-gradient(to bottom, #0066cc, #ba324f); /* Gradiente dal blu al rosso */
+  background: linear-gradient(to bottom, #0066cc, #ba324f);
   z-index: -1;
 }
 
@@ -71,11 +71,7 @@
   background: #CCE6F4;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   z-index: 1;
-  transition: transform 0.3s ease; /* Animazione hover */
-}
-
-.timeline-icon:hover {
-  transform: scale(1.1);
+  transition: transform 0.3s ease;
 }
 
 .timeline-icon .icon {
@@ -87,4 +83,56 @@
 .bottom-image-container {
   text-align: center;
   margin: 40px 0;
+}
+
+/* Media Queries */
+
+/* Nascondi timeline su dispositivi piccoli */
+@media (max-width: 768px) {
+  .timeline-container::before {
+    display: none; /* Rimuove la linea verticale */
+  }
+
+  .timeline-step {
+    flex-direction: column; /* Passa gli step in colonna */
+    margin-bottom: 50px; /* Riduce lo spazio tra gli step */
+  }
+
+  .timeline-step .timeline-content {
+    width: 100%; /* Allarga il contenuto */
+    text-align: left; /* Allinea a sinistra per leggibilità */
+  }
+
+  .timeline-icon {
+    margin-bottom: 20px; /* Spazio tra icona e contenuto */
+  }
+
+  .step-title,
+  .step-description {
+    text-align: center; /* Mantiene il testo centrato */
+  }
+}
+
+/* Schermi molto piccoli */
+@media (max-width: 480px) {
+  .timeline-container {
+    width: 100%; /* Adatta la larghezza */
+  }
+
+  .timeline-icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .timeline-icon .icon {
+    width: 50%;
+  }
+
+  .step-title {
+    font-size: 1.2em;
+  }
+
+  .step-description {
+    font-size: 1em;
+  }
 }

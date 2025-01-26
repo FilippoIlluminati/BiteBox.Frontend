@@ -41,8 +41,7 @@
 </div>
 
 <div class="button-container">
-    <a *ngIf="isAuthenticated; else loginLink" [routerLink]="'ordina'" class="button-red">Ordina</a>
-
+    <a *ngIf="isAuthenticated; else loginLink" [routerLink]="'/ordina'" class="button-red">Ordina</a>
     <ng-template #loginLink>
         <a [routerLink]="'/login'" class="button-red">Ordina</a>
     </ng-template>
@@ -86,4 +85,6 @@
     </div>
 </div>
 
+<div class="divider"></div>
+<app-rating-table></app-rating-table>
 <div class="dividerr"></div>

@@ -27,6 +27,7 @@ import { CheckoutComponent } from './checkout/checkout.component';
 // Aggiunte
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms'; // Importato per ngModel
+import { RatingTableComponent } from './rating-table/rating-table.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { FormsModule } from '@angular/forms'; // Importato per ngModel
     ProfileComponent,
     NavbarComponent,
     SingUpComponent,
+    RatingTableComponent,
     RitiroComponent,
     ProfileOrdiniComponent,
     OrdinaComponent,

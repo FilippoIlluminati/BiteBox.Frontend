@@ -9,7 +9,8 @@ import { AuthService } from '../auth.service';
 export class HomePageComponent {
   slides = [
     { image: './assets/slider1.jpeg' },
-    { image: './assets/slider2.jpeg' }
+    { image: './assets/slider2.jpeg' },
+    { image: './assets/slider3.jpeg' }
   ];
 
     isAuthenticated: boolean = this.authService.isAuth;
