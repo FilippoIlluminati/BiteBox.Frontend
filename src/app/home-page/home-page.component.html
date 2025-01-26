@@ -41,7 +41,8 @@
 </div>
 
 <div class="button-container">
-    <a *ngIf="isAuthenticated; else loginLink" [routerLink]="'/catalogo'" class="button-red">Ordina</a>
+    <a *ngIf="isAuthenticated; else loginLink" [routerLink]="'ordina'" class="button-red">Ordina</a>
+
     <ng-template #loginLink>
         <a [routerLink]="'/login'" class="button-red">Ordina</a>
     </ng-template>

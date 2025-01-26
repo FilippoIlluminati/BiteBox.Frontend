@@ -1,12 +1,15 @@
 .container {
-    width: 400px;
-    height: 470px;
-    margin: 100px auto;
-    padding: 20px;
+    width: 100%;
+    max-width: 500px; 
+    margin: 278px auto; 
+    padding: 30px; 
     border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    background-color: white;    box-shadow: 
+    0 10px 20px -10px rgba(0, 0, 0, 0.5),
+    0 -10px 20px -10px rgba(0, 0, 0, 0.5);
 }
+
 
 h1 {
     text-align: center;
@@ -17,6 +20,7 @@ label {
     display: block;
     margin-bottom: 3px;
     font-weight: bold;
+    
 }
 
 
@@ -24,7 +28,7 @@ input {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 3px;
+    border-radius: 5px;
     margin-bottom: 10px;
 }
 
@@ -34,7 +38,7 @@ button {
     color: rgb(255, 255, 255);
     padding: 10px 20px;
     border: none;
-    border-radius: 3px;
+    border-radius: 8px;
     cursor: pointer;
 }
 

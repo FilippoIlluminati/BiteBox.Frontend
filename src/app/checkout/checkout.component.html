@@ -1,7 +1,7 @@
 <br>
 
 <div class="container">
-    <h1>Pagamento:</h1>
+    <h1>Pagamento!</h1>
     <h3>ci siamo quasi...</h3>
     
     
@@ -19,9 +19,8 @@
   
         <button (click)="selectPaymentMethod(3)" class="button-pay"><img src="assets/apppay.svg"></button>
 
-        <button (click)="selectPaymentMethod(4)" class="button-pay"><img src="assets/paypal.svg"></button>
 
-        <button (click)="selectPaymentMethod(5)" class="button-pay"><img src="assets/amzpay.svg"></button>
+        <button (click)="selectPaymentMethod(4)" class="button-pay"><img src="assets/amzpay.svg"></button>
      
       </div>
 
@@ -30,7 +29,7 @@
       <br>
 
       <form>
-        <div class="credit-card-container" *ngIf="selectedPaymentMethod == 0 || selectedPaymentMethod == 1">
+        <div class="credit-card-container" *ngIf="selectedPaymentMethod == 0 || selectedPaymentMethod == 1 || selectedPaymentMethod == 2 || selectedPaymentMethod == 3 ">
 
           <label for="cardholderName">Nome del titolare:</label>
           <input type="text" id="name" pattern="[A-Za-zàèéìíòóùüÁÈÉÌÍÒÓÙÜñÑ\s]+" class="credit-card-input" placeholder="Nome e Cognome" required>
@@ -54,8 +53,7 @@
         </div>
       </form>
 
-      <app-amzon-pay *ngIf="selectedPaymentMethod == 5"></app-amzon-pay>
-
-      <app-paypal *ngIf="selectedPaymentMethod == 4"></app-paypal>
+      <app-amzon-pay *ngIf="selectedPaymentMethod == 4"></app-amzon-pay>
+           
 
   </div>

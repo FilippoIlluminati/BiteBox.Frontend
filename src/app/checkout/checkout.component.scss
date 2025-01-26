@@ -1,10 +1,14 @@
 .container {
   width: 600px;
-  margin: 0 auto;
+  margin: 352px auto; 
   padding: 20px;
   border: 1px solid #ccc;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 
+  0 10px 20px -10px rgba(0, 0, 0, 0.5),
+  0 -10px 20px -10px rgba(0, 0, 0, 0.5);
 }
 
 .center {
@@ -35,7 +39,7 @@
 
 h1 {
   text-align: center;
-  font-size: 28px;
+  font-size: 36px;
   color: #BA324F;
 }
 
@@ -47,7 +51,7 @@ h2 {
 
 h3 {
   text-align: center;
-  font-size: 14px;
+  font-size: 24px;
   margin-bottom: 20px;
   color: #BA324F;
 }
@@ -153,4 +157,7 @@ label {
   .credit-card-input {
       width: 100%;
   }
+ 
+  
+ 
 }
