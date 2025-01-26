@@ -1,8 +1,19 @@
 <div class="navbar">
-    <div class="circle"></div>
-    <a [routerLink]="'home'" class="text-fade">Home</a>
-    <a [routerLink]="'ordina'" *ngIf="isAuthenticated" class="text-fade">Ordina</a>
-    <a [routerLink]="'howitworks'" class="text-fade">Come funziona</a>
-    <a [routerLink]="'login'" *ngIf="!isAuthenticated" class="text-fade right">Login</a>
-    <a [routerLink]="'cartpage'" *ngIf="isAuthenticated" class="text-fade right">Carrello</a>
+    <!-- Sezione sinistra con link -->
+    <div class="left-section">
+        <a [routerLink]="'home'">Home</a>
+        <a [routerLink]="'ordina'" *ngIf="isAuthenticated">Ordina</a>
+        <a [routerLink]="'howitworks'">Come funziona</a>
+    </div>
+
+    <!-- Sezione centrale con il logo -->
+    <div class="center-section">
+        <a [routerLink]="'home'" class="brand">BiteBox</a>
+    </div>
+
+    <!-- Sezione destra con link -->
+    <div class="right-section">
+        <a [routerLink]="'login'" *ngIf="!isAuthenticated">Login</a>
+        <a [routerLink]="'cartpage'" *ngIf="isAuthenticated">Carrello</a>
+    </div>
 </div>

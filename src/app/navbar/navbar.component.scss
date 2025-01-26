@@ -1,44 +1,60 @@
 .navbar {
-    background-color: #175676;
-    overflow: hidden;
-    border-radius: 0px;
-    margin-bottom: 0;
+    background: linear-gradient(90deg, #BA324F, #175676); /* Gradiente da rosso a blu */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px; /* Spaziatura laterale */
+    height: 60px; /* Altezza fissa */
+    border-radius: 0; /* Nessun border-radius */
+    position: fixed; /* Navbar fissa */
+    top: 0;
+    left: 0;
+    width: 100%; /* Occupa tutta la larghezza */
+    z-index: 1000; /* Rimane sopra altri contenuti */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Leggera ombra */
 }
 
 .navbar a {
-    float: left;
-    display: block;
-    color: #ffffff;
+    color: #ffffff; /* Testo bianco di default */
+    text-decoration: none;
+    margin: 0 15px; /* Margine standard */
+    font-size: 16px;
+    font-weight: bold;
+    transition: transform 0.2s ease, color 0.3s ease; /* Effetto hover leggero */
+}
+
+.navbar a:hover {
+    transform: scale(1.05); /* Leggero ingrandimento */
+    color: #ffffff; /* Bianco puro */
+    font-weight: bolder; /* Effetto visivo aggiuntivo */
+}
+
+.navbar .left-section {
+    display: flex;
+    align-items: center;
+    margin-right: auto; /* Sposta questa sezione completamente a sinistra */
+    gap: 50px; /* Spaziatura tra i link */
+}
+
+.navbar .center-section {
+    position: absolute; /* Per posizionarlo al centro */
+    left: 50%; /* Sposta l'elemento al centro orizzontalmente */
+    transform: translateX(-50%); /* Centra completamente rispetto alla pagina */
     text-align: center;
-    padding: 14px 16px;
+}
+
+.navbar .center-section .brand {
+    color: #ffffff; /* Colore bianco per il logo */
+    font-size: 32px; /* Dimensione aumentata */
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    cursor: pointer;
     text-decoration: none;
 }
 
-.navbar a.right {
-    float: right;
+.navbar .right-section {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Sposta questa sezione completamente a destra */
+    gap: 15px; /* Spaziatura tra i link */
 }
-
-.circle {
-    width: 50px;
-    height: 50px;
-    background-color: #BA324F;
-    border-radius: 0 0 50px 0;
-    float: left;
-    margin-right: 10px;
-    left: 1;
-    rotate: 50%;
-}
-
-.text-fade {
-    opacity: 0.7; /* Opacità di base */
-    transition: opacity 0.5s ease; /* Aggiunge un'animazione di transizione */
-}
-
-.text-fade:hover {
-    opacity: 1; /* Aumenta l'opacità durante l'hover */
-}
-
-.navbar a:hover{
-    text-decoration: underline;
-}
-

@@ -1,113 +1,189 @@
 .carousel-container {
+    position: relative; /* Necessario per posizionare le sfumature */
     width: 100%;
+    height: 500px; /* Altezza del carosello */
+    overflow: hidden; /* Nasconde i contenuti che escono dai bordi */
+    margin: 0; /* Elimina margini */
 }
 
 .carousel-image {
     width: 100%;
-    height: 500px;
-    object-fit: cover;
+    height: 100%;
+    object-fit: cover; /* Ritaglia le immagini per adattarle */
 }
 
+/* Sfumature laterali */
+.carousel-gradient-left,
+.carousel-gradient-right {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100px; /* Larghezza della sfumatura */
+    z-index: 2;
+    pointer-events: none; /* Rende le sfumature non interattive */
+}
+
+.carousel-gradient-left {
+    left: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8), transparent);
+}
+
+.carousel-gradient-right {
+    right: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.8), transparent);
+}
+
+/* Sfumatura verso il bianco */
+.carousel-gradient-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px; /* Altezza della sfumatura */
+    background: linear-gradient(to bottom, transparent, #ffffff);
+    z-index: 2;
+    pointer-events: none;
+}
+
+
+/* Cards */
 .cards-container {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 40px;
     justify-content: center;
-    gap: 100px;
-
-    .card {
-        .circle {
-            padding: 25px;
-            background-color: #CCE6F4;
-            border-radius: 50%;
-            width: fit-content;
-            margin: auto;
-        }
-    
-        .title,
-        .description {
-            text-align: center;
-        }
-    
-        .title {
-            font-size: 20px;
-            margin-top: 20px;
-        }
-    }
+    gap: 60px; /* Spaziatura tra le card */
+    margin-top: 40px;
 }
 
+.card {
+    text-align: center;
+    max-width: 250px; /* Dimensione massima per la card */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombra per maggiore profondità */
+    padding: 20px;
+    border-radius: 15px; /* Angoli arrotondati */
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Effetto hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card .circle {
+    padding: 20px;
+    background-color: #CCE6F4;
+    border-radius: 50%;
+    width: fit-content;
+    margin: 0 auto 15px;
+}
+
+.card .title {
+    font-size: 20px; /* Dimensione leggermente aumentata */
+    font-weight: 700; /* Grassetto più marcato */
+    margin-bottom: 10px;
+    color: #333; /* Colore più scuro per migliorare la leggibilità */
+}
+
+.card .description {
+    font-size: 16px; /* Testo più grande */
+    font-weight: 500; /* Leggero grassetto */
+    color: #555; /* Colore neutro */
+    line-height: 1.5; /* Spaziatura tra le righe */
+}
+
+/* Button */
 .button-container {
-    margin-top: 100px;
     display: flex;
     justify-content: center;
-    width: 100%;
-
-    .button-red {
-        padding: 10px 50px;
-        background-color: #BA324F; /* rosso */
-        color: #fff; /* testo bianco */
-        border-radius: 20px; /* bordi arrotondati */
-        font-family: 'lexend', sans-serif;
-        border: none;
-        transition: box-shadow 0.3s ease; /* transizione per l'ombra */
-    }
-      
-    .button-red:hover {
-        box-shadow: 0 2.5px 5px #FF5257; /* ombra al passaggio del mouse */
-    }
+    margin-top: 50px;
 }
 
+.button-red {
+    padding: 15px 60px;
+    background-color: #BA324F; /* Rosso vibrante */
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    text-transform: uppercase; /* Testo maiuscolo */
+    border: none;
+    cursor: pointer;
+    text-decoration: none; /* Rimuove la sottolineatura */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button-red:hover {
+    background-color: #a02940; /* Colore scuro all'hover */
+    box-shadow: 0 4px 10px rgba(186, 50, 79, 0.5);
+    text-decoration: none; /* Garantisce che non venga mai sottolineato */
+}
+
+/* Divider */
 .divider {
-    width: 50%;
-    height: 2px;
+    width: 60%;
+    height: 3px;
+    border-radius: 3px;
     background-color: #CCE6F4;
     margin: 50px auto;
 }
 
+.dividerr {
+
+    margin: 50px auto;
+}
+
+/* Bookmarks */
 .bookmarks-container {
     display: flex;
-    gap: 100px;
+    gap: 50px;
     justify-content: center;
+    flex-wrap: wrap;
+}
 
-    .bookmark {
-        width: 200px; /* Larghezza del segnalibro */
-        height: 550px; /* Altezza del segnalibro */
-        background: linear-gradient(to bottom, #4C3D2F, transparent); /* Gradiente per il colore vivido che diventa trasparente */
-        border-radius: 200px; /* Angoli arrotondati */
-      
-       .bookmark-img img {
-            width: 175px ;
-            height: 175px ;
-            margin: 0 auto;  
-            display: flex;
-            position: relative;
-            top: 15px; /* Usa il posizionamento relativo */
-        }
-      
-        .bookmark-corpo {
-          height: calc(100% - 60px); /* Altezza del corpo del segnalibro (meno l'altezza del cerchio) */
-          margin-top: 40px;
-          color: #fff;
-          padding: 0px 20px;
-          text-align: center;
-        }
-    }
-    
-    .bookmark:nth-child(1) {
-        background: linear-gradient(to bottom, #4C3D2F, transparent); /* Gradiente per il colore vivido che diventa trasparente */
-    }
+.bookmark {
+    width: 220px;
+    height: 500px;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #4C3D2F, transparent);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-    .bookmark:nth-child(2) {
-        margin-top: 120px;
-        background: linear-gradient(to bottom, #AEC765, transparent); /* Gradiente per il colore vivido che diventa trasparente */
-    }
+.bookmark:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
 
-    .bookmark:nth-child(3) {
-        background: linear-gradient(to bottom, #B3422B, transparent); /* Gradiente per il colore vivido che diventa trasparente */
-    }
+.bookmark-img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Cerchio perfetto */
+    margin-bottom: 20px;
+}
 
-    .bookmark:nth-child(4) {
-        margin-top: 120px;
-        background: linear-gradient(to bottom, #C08859, transparent); /* Gradiente per il colore vivido che diventa trasparente */
-    }
+.bookmark-corpo {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+.bookmark:nth-child(2) {
+    background: linear-gradient(to bottom, #AEC765, transparent);
+}
+
+.bookmark:nth-child(3) {
+    background: linear-gradient(to bottom, #B3422B, transparent);
+}
+
+.bookmark:nth-child(4) {
+    background: linear-gradient(to bottom, #C08859, transparent);
 }
